@@ -17,6 +17,20 @@ This set-up is built for projects where getting it wrong is expensive and many p
 
 It is less suited to quick throwaway prototypes, solo experiments or visual-only concept work. For those, use a few artefacts, not the whole set.
 
+## What the artefact templates are for
+
+Each template is a blank, structured document you copy into a new project and fill in. Each one answers a question that has to be answered before or during design work. They do two jobs.
+
+**1. They are the AI's working memory.** Claude starts every session knowing nothing about the project. Without written context it fills the gaps with generic guesses, which is where bland, "could be any product" output comes from. A filled-in template gives it the facts in a form it can read: who the users are, which constraints are real, which tokens and components exist. Claude then designs against the project's facts, not its own defaults. The skills read and write these files, so each skill and template work as a pair.
+
+**2. They are the paper trail for people.** In public sector and B2B work, many people need to agree, and someone will later ask "why is it like this?" or "who approved that?". The stakeholder map shows who decides. The feedback and decision logs show what was asked, what was decided, by whom and why. The handoff spec tells engineering and other vendors what is final. The security and privacy brief shows that data and permissions were considered early.
+
+**Example.** For a municipality's citizen portal, you fill in `project.config.md`, then the product context and problem framing from the client's brief, with Claude drafting and you correcting. When you ask Claude to design the application form flow, it reads those files first and produces a flow with error paths and states that fit the users, constraints and stakeholders. Months later, when someone asks why a step was removed, the answer is in the decision log, with the date, the decider and the reason.
+
+**Why not let the AI work it out each time?** That is fine for small tasks. On larger projects the AI forgets between sessions, different people get different answers and nothing is traceable. The templates make the context persistent, shared and checkable.
+
+**Watch out for paperwork.** Filling in every template for a one-week experiment costs more than it gives. Start with the core five and add others only when the project needs them.
+
 ## How to use this repo
 
 > This describes the intended workflow. The files it mentions are not built yet (see Status).
