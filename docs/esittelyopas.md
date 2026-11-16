@@ -24,10 +24,12 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 | `artefacts/` | 12 mallipohjaa (00–11) ja fiktiiviset esimerkit viidelle ydindokumentille | valmis |
 | `docs/ai-workflow.md` | Miten käytän tekoälyä: roolit, rajat, istuntotavat | valmis |
 | `docs/important-notes.md` | Suunnittelumuistiinpanot ja tehdyt päätökset tästä repostä | valmis |
-| `.claude/settings.json` | Estosäännöt (esim. salaisuustiedostoja ei lueta) | valmis, tarkista syntaksi |
-| `design-system/` | Design tokenit, säännöt ja annotoidut esimerkit hyvästä työstä | tulossa (M3) |
-| `.claude/skills/` | Omat skillit: sidosryhmäkartta, saavutettavuustarkistus, tietoturvakatsaus, hankintavalmis luovutus, NDA-turvallinen case study | tulossa (M4) |
-| `scripts/` ja `.github/` | Automaattiset tarkistukset: ovatko säännöt voimassa | tulossa (M5) |
+| `.claude/settings.json` | Estosäännöt (esim. salaisuustiedostoja ei lueta). Syntaksi varmistettu Clauden dokumentaatiosta | valmis |
+| `design-system/` | Design tokenit (aloitusarvot), säännöt ja viisi annotoitua esimerkkiä omasta työstäni: spec ennen toteutusta, päätösmerkintä joka korjaa itseään, periaatteet kompromisseineen, rehellinen rajaus, suunnittelun iteraatio | valmis. Annotaatiot ovat luonnoksia, tarkista ne |
+| `.claude/skills/` | Seitsemän omaa skilliä: saavutettavuustarkistus (laskee kontrastin skriptillä), sidosryhmäkartta, tietoturva- ja yksityisyyskatsaus, hankintavalmis luovutus, NDA-turvallinen case study, päätösloki, samankaltaisuustarkistus | valmis, ei vielä kokeiltu oikeassa projektissa |
+| `docs/skills.md` | Skillien luettelo, generoidaan skillien kuvauksista | valmis |
+| `evals/` | Testikehotteet siihen, laukeavatko skillit oikein | kirjoitettu, ei vielä ajettu |
+| `scripts/` ja `.github/` | Tarkistus, että repo noudattaa omia sääntöjään (AGENTS.md alle 100 riviä, skillit kunnossa, linkit toimivat, tokenien kontrastit läpi). Pyörii GitHub Actionsissa. Lisäksi valinnainen tokenilinteri koodiprojekteihin | valmis ja testattu |
 
 Ydindokumentit (viisi): 00 tuotekonteksti, 01 ongelman muotoilu, 02 sidosryhmäkartta, 03 vaatimusmäärittely, 10 päätösloki. Muut lisätään vasta kun projekti niitä tarvitsee.
 
@@ -100,7 +102,7 @@ Nämä ovat se vastaus kysymykseen "miten voi luottaa tekoälyn tekemään työh
 2. Rakenne: kansiot ja miksi `AGENTS.md` on lyhyt.
 3. Näytä `project.config.md` ja yksi täytetty esimerkki (esim. sidosryhmäkartta: kuka päättää, missä on ristiriita).
 4. Näytä `docs/ai-workflow.md`: roolitaulukko ja "missä en käytä tekoälyä".
-5. Näytä skillit ja tarkistusskriptit, kun ne on tehty.
+5. Näytä `docs/skills.md` ja yksi skilli (esim. saavutettavuustarkistus: se laskee kontrastin skriptillä eikä arvaa). Näytä lopuksi, että tarkistusskripti nappaa rikotun säännön.
 6. Linkitä oma työ, josta sääntöjen alkuperä näkyy: agenttiajojen katselmointinäkymä ja design system -esimerkki portfoliossa.
 7. Rehellinen loppu: mitä ei vielä ole tai ei ole testattu (kohta 7).
 
@@ -110,13 +112,15 @@ Nämä ovat se vastaus kysymykseen "miten voi luottaa tekoälyn tekemään työh
 
 Älä esitä valmiiksi sitä, mikä ei ole valmis.
 
-- **Valmis:** perusta (M1) ja mallipohjat (M2).
-- **Ei vielä tehty:** suunnittelujärjestelmän kerros ja esimerkit (M3), skillit (M4), tarkistusskriptit (M5), loppusiivous (M6).
-- **Mallipohjia ei ole vielä käytetty oikeassa projektissa.** Niiden toimivuutta ei ole todennettu. Sano mieluummin "ensimmäinen versio, kokeillaan seuraavassa projektissa".
+- **Valmis:** perusta (M1), mallipohjat (M2), suunnittelujärjestelmän kerros ja esimerkit (M3), skillit (M4) ja tarkistusskriptit (M5).
+- **Ei vielä tehty:** loppusiivous ja README:n viimeistely (M6).
+- **Mallipohjia ja skillejä ei ole vielä käytetty oikeassa projektissa.** Skillien laukeamista varten on testikehotteet (`evals/trigger-tests.md`), mutta niitä ei ole vielä ajettu. Sano mieluummin "ensimmäinen versio, kokeillaan seuraavassa projektissa".
+- **Tarkistusskriptit on testattu**, myös tahallaan rikotulla kopiolla. Kontrastilaskuri antaa samat tulokset kuin tunnetut vertailuarvot (esim. musta valkoisella 21:1).
+- **Esimerkkien annotaatiot ovat luonnoksia.** Ne on kirjoitettu lukemalla omia projektejasi, ja sinun pitää tarkistaa, että kuvaus siitä mitä päätit ja mistä luovuit pitää paikkansa.
 - **Esimerkit ovat fiktiivisiä.** Ne on merkitty sellaisiksi. Älä esitä niitä oikeana asiakastyönä.
 - **Esimerkit puuttuvat vielä** mallipohjille 04–09 ja 11.
 - **Saavutettavuuslista on suunnitteluvaiheen tarkistus, ei auditointi.** Se ei korvaa testausta avustavilla teknologioilla eikä vammaisten käyttäjien kanssa.
-- **Joitakin teknisiä väitteitä ei ole varmistettu virallisesta dokumentaatiosta**, esimerkiksi estosääntöjen tarkka syntaksi ja `/design-sync`-toiminnon rajat. Katso `docs/important-notes.md`.
+- **Estosäännöt ja skillien rakenne on tarkistettu Clauden dokumentaatiosta.** Auki on vielä muun muassa `/design-sync`-toiminnon rajat ja se, ladataanko skill-kansion README tekoälyn kontekstiin (siksi sitä ei sallita). Katso `docs/important-notes.md`.
 
 ---
 

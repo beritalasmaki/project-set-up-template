@@ -3,7 +3,7 @@ Base project template featuring my custom Claude skills, artifacts, and structur
 
 ## Status
 
-Under construction. In place: the foundation (`AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`) and the twelve artefact templates in `artefacts/`, with fictional filled-in examples for the core five. Still to come: the design system layer, skills and validation scripts. The research, decisions and open questions are in **[docs/important-notes.md](docs/important-notes.md)**.
+Under construction. In place: the foundation (`AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`), the twelve artefact templates in `artefacts/` with fictional examples for the core five, the design system layer in `design-system/` (tokens, rules and five annotated examples from my own work), seven skills in `.claude/skills/` (catalogue in `docs/skills.md`), and validation scripts in `scripts/` that run in CI. Not yet done: trying the template on a real project, and a final polish of this README. The research, decisions and open questions are in **[docs/important-notes.md](docs/important-notes.md)**.
 
 ## Best suited for
 
@@ -72,7 +72,7 @@ For each one, you paste in your raw material, Claude drafts, and you correct. An
 
 For any task, tell Claude three things: **which skill or artefact to use**, **which context files to read first**, and **what you want back**. Claude produces a draft. You review it, correct it and keep or discard it. Claude proposes, you decide.
 
-Example prompts in this README show the shape, not fixed wording. Phrase yours to fit the project. Something like: *"Use the user flow skill for the application form. Read the product context and requirements first, and give me the flow with error paths."*
+Example prompts in this README show the shape, not fixed wording. Phrase yours to fit the project. Something like: *"Use the stakeholder map skill on these kick-off notes. Read the project config first, and show me who decides what and where the conflicts are."*
 
 ### Step 5: Add other artefacts when the project needs them
 

@@ -42,9 +42,11 @@ From the guidance reviewed in the planning session.
 - **Author skills with `skill-creator`** so trigger accuracy is tested, not guessed.
 - **Session hygiene:** `/clear` between unrelated tasks, `/compact` at about 40–50% context, `/context` to inspect what is loaded, commit after each subtask, check named paths before broad searches.
 
-### Claims to verify before documenting as fact
+### Claims checked against the Claude Code docs, and claims still open
 
-- **`.claudeignore`:** unconfirmed as a Claude Code feature. Plan: use `permissions.deny` rules in `.claude/settings.json` (lockfiles, `dist/`, `.next/`, `.env*`), and check the current docs first.
+- **Checked (settings docs):** `permissions.deny` rules such as `Read(./.env)` and `Read(./.env.*)` are documented. `.claudeignore` is not mentioned in the settings docs, so this repo uses deny rules.
+- **Checked (skills docs):** project skills live in `.claude/skills/<name>/SKILL.md`. The description plus `when_to_use` is capped at 1,536 characters in the skill listing. Keep `SKILL.md` under 500 lines. The docs do not say whether a README inside a skill folder is loaded, so the validator forbids one as a precaution.
+- **Still open:**
 - **`/design-sync`:** needs a React repo and a Team or Enterprise plan. Treat it as optional and check what it does before documenting it.
 - **Hard numbers** (4 MiB, 32 KiB, "40–60% token savings") came from secondary sources. Use the 100/200/500 line figures as targets and do not quote the rest.
 
@@ -133,10 +135,13 @@ scripts/         lint-tokens · validate-template
 - **M1 foundation:** done. `AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`.
 - **M2 artefact templates:** done. Twelve templates (00–11), `artefacts/AGENTS.md`, and fictional examples for the core five in `artefacts/examples/`. Examples for 04–09 and 11 are not written yet.
 - **Presenter guide:** `docs/esittelyopas.md` (Finnish, for the owner, not loaded by agents). Update its status sections as milestones land.
-- **M3 design system layer:** next. Needs the example work picks.
+- **M3 design system layer:** done. `design-system/` with `tokens.json` (starter values, contrast pairs), `rules.md`, a nested `AGENTS.md`, and five annotated examples from my own projects: spec before build, a decision record that corrects itself, principles with trade-offs, honest scope, a design iteration. Annotations are drafts for the owner to confirm.
+- **M4 skills:** done. Seven skills: `a11y-gate` (with `scripts/contrast.py`), `stakeholder-map`, `security-privacy-brief`, `procurement-ready-handoff`, `nda-safe-case-study` (with `scripts/scan-confidential.py`), `decision-log`, `sameness-check`. Trigger prompts are in `evals/trigger-tests.md`. They are written but **not yet run**.
+- **M5 validation:** done. `scripts/validate-template.py` (also generates `docs/skills.md`), `scripts/lint-tokens.py` (optional, for projects with code) and `.github/workflows/validate.yml`. Tested, including a deliberately broken copy.
+- **M6 showcase pass:** next.
 
 ## 9. Next steps
 
 1. Answer the open decisions above.
-2. Verify the `.claudeignore` and `/design-sync` claims against current docs.
+2. Run the trigger tests in `evals/trigger-tests.md` and tighten skill descriptions where they fail.
 3. Build in this order: `AGENTS.md` and README, `project.config.md`, artefact templates, tokens and examples, skills, validation scripts.

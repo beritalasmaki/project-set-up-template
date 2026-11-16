@@ -1,0 +1,15 @@
+# Never commit secrets or confidential material
+.env
+.env.*
+!.env.example
+.confidential-terms
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
