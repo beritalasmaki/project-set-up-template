@@ -17,6 +17,21 @@ This set-up is built for projects where getting it wrong is expensive and many p
 
 It is less suited to quick throwaway prototypes, solo experiments or visual-only concept work. For those, use a few artefacts, not the whole set.
 
+## How to use this repo
+
+> This describes the intended workflow. The files it mentions are not built yet (see Status).
+
+1. **Copy it into a new project.** Use "Use this template" on GitHub, or copy the folders you need into an existing repo.
+2. **Fill in `project.config.md` first.** Set the accessibility level, regulatory basis, data classes, languages and stakeholder roles. The templates and skills read these values, so they stay generic.
+3. **Start with the core artefacts.** Product context, problem framing, stakeholder map, requirements and the decision log. Add the others (user flows and states, accessibility checklist, security and privacy brief, design system rules, handoff spec, feedback log, case study notes) only when the project needs them. A small project may need only the core five.
+4. **Let Claude draft, and you decide.** Give Claude your raw notes and ask it to fill a template, or run the matching skill. Review every claim, correct it, and mark anything unproven as a gap. Claude never calls work accessible, compliant or tested.
+5. **Design against the written context.** Ask Claude for screens, flows or copy only after the context files exist. It reads them first, so the output follows your project's facts, tokens and constraints, not its own defaults.
+6. **Log decisions as you go.** Record each significant decision with its context, the decider by role and a revisit trigger, so you can answer "why is it like this?" later.
+7. **Review before sharing.** Run the accessibility and sameness checks on drafts, and fix what they find.
+8. **Turn it into a case study.** Use the case study notes (kept free of confidential details) to write the portfolio piece.
+
+Keep sessions short and focused: clear between unrelated tasks and commit after each subtask. More in `docs/ai-workflow.md` once it exists.
+
 ## Key decisions so far
 
 - **Small `AGENTS.md` (about 100 lines or less)** acting as an index. Rules that apply rarely live in skills or nested `AGENTS.md` files.
