@@ -19,7 +19,7 @@ It is less suited to quick throwaway prototypes, solo experiments or visual-only
 
 ## What the artefact templates are for
 
-Each template is a blank, structured document you copy into a new project and fill in. Each one answers a question that has to be answered before or during design work. They do two jobs.
+Each template is a blank, structured document in your project workspace that you fill in. Each one answers a question that has to be answered before or during design work. They do two jobs.
 
 **1. They are the AI's working memory.** Claude starts every session knowing nothing about the project. Without written context it fills the gaps with generic guesses, which is where bland, "could be any product" output comes from. A filled-in template gives it the facts in a form it can read: who the users are, which constraints are real, which tokens and components exist. Claude then designs against the project's facts, not its own defaults. The skills read and write these files, so each skill and template work as a pair.
 
@@ -35,20 +35,74 @@ Each template is a blank, structured document you copy into a new project and fi
 
 > This describes the intended workflow. The files it mentions are not built yet (see Status).
 
-1. **Copy it into a new project.** Use "Use this template" on GitHub, or copy the folders you need into an existing repo.
-2. **Fill in `project.config.md` first.** Set the accessibility level, regulatory basis, data classes, languages and stakeholder roles. The templates and skills read these values, so they stay generic.
-3. **Start with the core artefacts.** Product context, problem framing, stakeholder map, requirements and the decision log. Add the others (user flows and states, accessibility checklist, security and privacy brief, design system rules, handoff spec, feedback log, case study notes) only when the project needs them. A small project may need only the core five.
-4. **Let Claude draft, and you decide.** Give Claude your raw notes and ask it to fill a template, or run the matching skill. Review every claim, correct it, and mark anything unproven as a gap. Claude never calls work accessible, compliant or tested.
-5. **Design against the written context.** Ask Claude for screens, flows or copy only after the context files exist. It reads them first, so the output follows your project's facts, tokens and constraints, not its own defaults.
-6. **Log decisions as you go.** Record each significant decision with its context, the decider by role and a revisit trigger, so you can answer "why is it like this?" later.
-7. **Review before sharing.** Run the accessibility and sameness checks on drafts, and fix what they find.
-8. **Turn it into a case study.** Use the case study notes (kept free of confidential details) to write the portfolio piece.
+### Where this repo fits
 
-Keep sessions short and focused: clear between unrelated tasks and commit after each subtask. More in `docs/ai-workflow.md` once it exists.
+This is **your own project workspace**, not the client's codebase. For each client project you create a new, **private** repo from this template. The client's repo is never touched. Your deliverables still go where the client expects them (Figma, Jira, Confluence, their repo). The workspace is where you and Claude think, draft and keep the record of decisions.
+
+If the client wants something from it, such as design system rules or a decision log, you export that file and hand it over. Nothing moves into their repo unless they ask.
+
+### Before you start
+
+Check the client's rules on AI tools and data. In public sector and B2B work you may not be allowed to paste confidential or personal data into an AI tool. If in doubt, ask. Use placeholders for names and figures until you know.
+
+### Step 1: Create the project workspace
+
+1. On GitHub, open this repo and click **Use this template**, then **Create a new repository**.
+2. Name it after the project (for example `citizen-portal-workspace`) and set it to **Private**.
+3. Clone it and open the folder in Claude Code.
+4. If Claude needs to read the client's code, open that checkout as an additional folder. Do not commit workspace files into it.
+
+### Step 2: Fill in `project.config.md`
+
+Tell Claude: *"Ask me the questions in project.config.md one at a time and fill it in."* It covers the project name, client type, accessibility level (ask the client, default AA), regulatory basis, data classes handled, languages, stakeholder roles and tools. It takes about ten minutes, and every other template and skill reads it.
+
+### Step 3: Fill in the five core artefacts, in this order
+
+For each one, you paste in your raw material, Claude drafts, and you correct. Anything Claude cannot find in your material stays marked as a **gap**. Do not let it guess.
+
+| Artefact | What you give Claude | What you do afterwards | Done when |
+|---|---|---|---|
+| `00 Product context` | The client brief, kick-off notes, existing docs | Answer the gaps, delete anything wrong | Users, constraints and "never does" are written, each with a source |
+| `01 Problem framing` | The request as it was handed to you, any user data | Rewrite the problem as a user situation with no solution in it | The problem has no fix hidden in it, and evidence and gaps are listed |
+| `02 Stakeholder map` | Names and roles from kick-off, org chart | Mark who decides and where interests conflict | Every stakeholder has a role, a need and a "decides / informed" label |
+| `03 Requirements spec` | The brief, workshop notes, legal or policy documents | Confirm each requirement's owner and source | Accessibility, security and privacy sections are filled in, not skipped |
+| `10 Decision log` | Nothing yet | Add an entry every time something significant is decided | At least the decisions already made at kick-off are recorded |
+
+### Step 4: Do design work against that context
+
+For any task, ask Claude to use the matching skill, for example: *"Run the user flow skill for the application form. Read the product context and requirements first."* Claude produces a draft. You review it, correct it and keep or discard it. Claude proposes, you decide.
+
+### Step 5: Add other artefacts when the project needs them
+
+| When this happens | Add |
+|---|---|
+| You start designing screens and flows | `04 User flows and states` |
+| Designs are ready to check | `05 Accessibility checklist` |
+| The product handles personal or sensitive data, or has several user roles | `06 Security and privacy brief` |
+| You or Claude are producing UI | `07 Design system rules` |
+| Designs go to engineering or other vendors | `08 Handoff spec` |
+| Reviews bring comments from several stakeholders | `09 Stakeholder feedback log` |
+| The project is coming to a close | `11 Case study notes` |
+
+### Step 6: Keep the record as you go
+
+After every meeting or review where something was decided, tell Claude: *"Add a decision record: [what was decided], decided by [role], because [reason]."* Review the entry before you save it.
+
+### Step 7: Check before you share
+
+Before a design goes to a stakeholder or to engineering, ask Claude to run the accessibility check and the sameness check on it. Fix what they find. Neither one is an audit. Say so when you share the result.
+
+### Step 8: Keep sessions tidy
+
+Clear the session between unrelated tasks and commit after each subtask. More in `docs/ai-workflow.md` once it exists.
+
+### At the end of the project
+
+Use `11 Case study notes` and the decision log to write the portfolio case study. Remove confidential details and check what you may publish before anything goes online.
 
 ## Key decisions so far
 
 - **Small `AGENTS.md` (about 100 lines or less)** acting as an index. Rules that apply rarely live in skills or nested `AGENTS.md` files.
-- **Hybrid skills:** install the [product-designers-pack](https://github.com/polar-bear-org/claude-skills/tree/main/packs/product-designers-pack) by 90n from its source (its licence does not allow public redistribution), and write my own skills for public sector and B2B gaps: stakeholder mapping, accessibility and security checks, procurement-ready handoff, NDA-safe case studies.
+- **My own skills, inspired by the structure of** the [product-designers-pack](https://github.com/polar-bear-org/claude-skills/tree/main/packs/product-designers-pack) by 90n. Their licence does not allow public redistribution, so nothing is copied or installed. The skills are written from my own practice and public sources (WCAG 2.2, GOV.UK Service Manual, W3C WAI), with a focus on public sector and B2B gaps: stakeholder mapping, accessibility and security checks, procurement-ready handoff, NDA-safe case studies.
 - **Examples over prohibitions:** annotated good examples guide design quality. Objective rules (design tokens, contrast) are enforced by scripts, and taste is checked in a review step instead of banned up front.
 - **Built for accessibility, security and many stakeholders** because that is the kind of work this template supports.
