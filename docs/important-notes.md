@@ -132,6 +132,7 @@ scripts/         lint-tokens · validate-template
 
 - **M1 foundation:** done. `AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`.
 - **M2 artefact templates:** done. Twelve templates (00–11), `artefacts/AGENTS.md`, and fictional examples for the core five in `artefacts/examples/`. Examples for 04–09 and 11 are not written yet.
+- **Presenter guide:** `docs/esittelyopas.md` (Finnish, for the owner, not loaded by agents). Update its status sections as milestones land.
 - **M3 design system layer:** next. Needs the example work picks.
 
 ## 9. Next steps
