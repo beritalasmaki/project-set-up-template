@@ -70,7 +70,9 @@ For each one, you paste in your raw material, Claude drafts, and you correct. An
 
 ### Step 4: Do design work against that context
 
-For any task, ask Claude to use the matching skill, for example: *"Run the user flow skill for the application form. Read the product context and requirements first."* Claude produces a draft. You review it, correct it and keep or discard it. Claude proposes, you decide.
+For any task, tell Claude three things: **which skill or artefact to use**, **which context files to read first**, and **what you want back**. Claude produces a draft. You review it, correct it and keep or discard it. Claude proposes, you decide.
+
+Example prompts in this README show the shape, not fixed wording. Phrase yours to fit the project. Something like: *"Use the user flow skill for the application form. Read the product context and requirements first, and give me the flow with error paths."*
 
 ### Step 5: Add other artefacts when the project needs them
 
@@ -84,17 +86,40 @@ For any task, ask Claude to use the matching skill, for example: *"Run the user 
 | Reviews bring comments from several stakeholders | `09 Stakeholder feedback log` |
 | The project is coming to a close | `11 Case study notes` |
 
-### Step 6: Keep the record as you go
+### Step 6: Record decisions when they are made
 
-After every meeting or review where something was decided, tell Claude: *"Add a decision record: [what was decided], decided by [role], because [reason]."* Review the entry before you save it.
+**What this means.** During a project, decisions get made in meetings, reviews and chats: "we drop PDF export from the first release", "the form becomes a step-by-step flow". Months later nobody remembers who decided or why, and the decision gets reopened. The decision log (`10`) is one short entry per significant decision, so the answer is always findable.
+
+**When.** Right after a meeting or review where something was decided. That includes decisions that went against your recommendation. Log only significant ones: hard to reverse, affecting other people, or likely to be questioned later.
+
+**How.** Give Claude your meeting notes and ask it to pull out the decisions and draft entries. You check each one, especially *decided by* and *why*, then save it. Claude must not invent a reason that was not in your notes.
+
+Each entry holds: what was decided, the context, the options that were considered, who decided (by role), the reason, and what would make you reopen it. For example:
+
+> **D-007: Application form becomes a step-by-step flow.** Decided by: service owner, after the stakeholder review. Why: usability sessions showed people abandoning the long single page. Considered: single page with sections. Gives up: faster completion for expert users. Revisit if: completion rates drop after launch.
 
 ### Step 7: Check before you share
 
-Before a design goes to a stakeholder or to engineering, ask Claude to run the accessibility check and the sameness check on it. Fix what they find. Neither one is an audit. Say so when you share the result.
+**Share with whom.** Anyone outside your own working session: stakeholders in a review, the client, engineers or other vendors receiving a handoff, or users in a test. Once it leaves your hands, people treat it as more finished and more reliable than it may be.
+
+**What you check:**
+
+- **Accessibility, at design stage.** Contrast, target sizes, focus order, labels, error messages. Each check is pass, fail or *cannot tell from a design*.
+- **Sameness.** Which choices are just defaults that nobody decided on?
+- **Claims and confidentiality.** Does anything say "tested", "accessible" or "compliant" without evidence? Do the screens or prototype contain real personal data, client names or confidential figures?
+
+You get a short list of things to fix. Fix them, then share with one honest line: *"Design-stage review, not an audit."* Claude must never say a design is accessible or compliant.
 
 ### Step 8: Keep sessions tidy
 
-Clear the session between unrelated tasks and commit after each subtask. More in `docs/ai-workflow.md` once it exists.
+A long session fills Claude's memory with old conversation. Answers get worse and slower, and cost more. Because everything important lives in the files, you lose nothing by starting fresh.
+
+- **Switching to a different task**, for example you finished the stakeholder map and move on to user flows: type `/clear`. Claude starts empty and reads the files again.
+- **Long session on the same task** that is getting slow or forgetful: type `/compact` to shrink the history.
+- **Not sure what is taking up space:** type `/context`.
+- **After each finished artefact or task**, make a commit with a clear message, such as "Add stakeholder map first draft". Work is saved and each change stays small.
+
+More in `docs/ai-workflow.md` once it exists.
 
 ### At the end of the project
 
@@ -103,6 +128,6 @@ Use `11 Case study notes` and the decision log to write the portfolio case study
 ## Key decisions so far
 
 - **Small `AGENTS.md` (about 100 lines or less)** acting as an index. Rules that apply rarely live in skills or nested `AGENTS.md` files.
-- **My own skills, inspired by the structure of** the [product-designers-pack](https://github.com/polar-bear-org/claude-skills/tree/main/packs/product-designers-pack) by 90n. Their licence does not allow public redistribution, so nothing is copied or installed. The skills are written from my own practice and public sources (WCAG 2.2, GOV.UK Service Manual, W3C WAI), with a focus on public sector and B2B gaps: stakeholder mapping, accessibility and security checks, procurement-ready handoff, NDA-safe case studies.
+- **My own skills**, written from my own practice and public sources (WCAG 2.2, GOV.UK Service Manual, W3C WAI), with a focus on public sector and B2B needs: stakeholder mapping, accessibility and security checks, procurement-ready handoff, NDA-safe case studies.
 - **Examples over prohibitions:** annotated good examples guide design quality. Objective rules (design tokens, contrast) are enforced by scripts, and taste is checked in a review step instead of banned up front.
 - **Built for accessibility, security and many stakeholders** because that is the kind of work this template supports.

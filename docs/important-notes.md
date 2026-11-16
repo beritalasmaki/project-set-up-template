@@ -23,17 +23,9 @@ It should contain:
 - Case studies exist in English and Finnish, so i18n belongs in the template.
 - Good sources of example work: `design-system-use-case`, the agent run review dashboard, deliberate choices in `portfolio-homepage`.
 
-### The product-designers-pack ([polar-bear-org/claude-skills](https://github.com/polar-bear-org/claude-skills/tree/main/packs/product-designers-pack))
+### Gaps that general design skills tend to miss
 
-- 32 skills (`pdes-*`) across eight stages, from framing the problem to the portfolio case study.
-- Every skill holds one line: Claude drafts, checks and explains; the designer decides; nothing is called tested, accessible or ready that was not.
-- General-purpose. It has no public sector content: no EU accessibility directive, GDPR, procurement or multi-vendor handoff, and little on stakeholder mapping.
-
-### Licence (binding constraint)
-
-The pack is free to use **inside your company and for your own client work, not for resale**. It must not be redistributed publicly or presented as your own.
-
-**Decision:** do **not** copy the pdes skills into this repo if it is public. Install the pack from its source (`/plugin marketplace add polar-bear-org/claude-skills`, then `/plugin install product-designers-pack@90n-skills`), credit 90n, and write my own skills for the gaps.
+Public sector and B2B work needs content that generic design workflows rarely cover: accessibility duties, GDPR and data handling, procurement, multi-vendor handoff and stakeholder mapping. The skills in this repo are written to cover these.
 
 ## 3. Principles for agent files and skills
 
@@ -88,7 +80,8 @@ artefacts/       AGENTS.md + spec templates
                    03 requirements spec (accessibility + security) · 04 user flow and states
                    05 accessibility checklist (WCAG 2.2 AA) · 06 security and privacy brief
                    07 design system rules · 08 handoff spec · 09 stakeholder feedback log
-                   10 case study notes (NDA-safe)
+                   10 decision log · 11 case study notes (NDA-safe)
+                   Core five: 00, 01, 02, 03, 10. The rest are added as needed.
 design-system/   AGENTS.md · tokens.json · rules.md · examples/
 .claude/
   settings.json  (deny rules, PostToolUse hook)
@@ -98,7 +91,7 @@ scripts/         lint-tokens · validate-template
 .github/         workflow running validate-template
 ```
 
-**Own skills (the gaps in the pack):**
+**Own skills** (written from my own practice and public sources such as WCAG 2.2, the GOV.UK Service Manual and W3C WAI):
 
 - `stakeholder-map`: roles, interests, who decides, conflicts side by side.
 - `a11y-gate`: design-stage WCAG 2.2 AA check with the answers pass, fail, or cannot tell from a design. Contrast and target-size maths done by a script.
@@ -116,16 +109,25 @@ scripts/         lint-tokens · validate-template
 - Decisions are logged by role. Claude proposes, I decide.
 - Every design claim links to evidence or is marked as a gap.
 
-## 7. Open decisions
+## 7. Decisions made
 
-1. **Public or private repo?** Assumed public, which makes the licence constraint binding.
-2. **Skills approach:** install the pack and add my own skills (recommended).
-3. **Code scaffold?** Recommended: docs, skills and tokens only, with an optional `scaffold/` later.
-4. **Language:** English only, or also Finnish versions of the templates?
-5. **Standards focus:** name Finnish and EU requirements explicitly (EU accessibility directive, EN 301 549, GDPR) or keep generic?
-6. **Example work:** which 4–6 pieces of my work show what good looks like?
+- **Skills:** all skills are my own. No third-party skill packs are installed, copied or referenced.
+- **Language:** English only. No Finnish versions of the templates.
+- **Standards:** generic. `project.config.md` holds the WCAG level, regulatory basis, data classes and languages, so templates and skills stay country-neutral. Legal-adjacent outputs end with: design-stage review, not an audit or conformance statement; check legal duties with a qualified adviser.
+- **Core artefacts:** 00 product context, 01 problem framing, 02 stakeholder map, 03 requirements spec, 10 decision log. The others are added when the project needs them.
+- **How the repo is used:** a private per-project workspace created from this template. It is never copied into the client's repo. Files are exported to the client only on request.
+- **Per-skill README:** none. Skill folders hold `SKILL.md` plus `references/`, `scripts/` and `assets/` as needed. A skills catalogue (`docs/skills.md`) is generated from the frontmatter, and test prompts live in a top-level `evals/` folder.
+- **`docs/ai-workflow.md`:** human-facing page covering roles, the workflow, where AI is not used, how claims are handled, and session hygiene. It is not loaded as context by default.
+- **`SETUP.md`:** replaced by `docs/using-this-template.md`.
+- **Validation:** `validate-template` is a priority. `lint-tokens` is an optional script to copy into a project with code.
 
-## 8. Next steps
+## 8. Open decisions
+
+1. **Public or private repo?** Assumed public.
+2. **Code scaffold?** Recommended: docs, skills and tokens only, with an optional `scaffold/` later.
+3. **Example work:** which 4–6 pieces of my work show what good looks like?
+
+## 9. Next steps
 
 1. Answer the open decisions above.
 2. Verify the `.claudeignore` and `/design-sync` claims against current docs.
