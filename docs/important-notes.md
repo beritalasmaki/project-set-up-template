@@ -121,11 +121,17 @@ scripts/         lint-tokens · validate-template
 - **`SETUP.md`:** replaced by `docs/using-this-template.md`.
 - **Validation:** `validate-template` is a priority. `lint-tokens` is an optional script to copy into a project with code.
 
+- **Repo visibility:** the template repo is public, so it must never contain client data or confidential material. Project workspaces created from it are private.
+- **Scaffold:** none. The template holds docs, artefacts, skills and tokens only.
+
 ## 8. Open decisions
 
-1. **Public or private repo?** Assumed public.
-2. **Code scaffold?** Recommended: docs, skills and tokens only, with an optional `scaffold/` later.
-3. **Example work:** which 4–6 pieces of my work show what good looks like?
+1. **Example work:** which 4–6 pieces of my work show what good looks like?
+
+## Progress
+
+- **M1 foundation:** done. `AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`.
+- **M2 artefact templates:** next.
 
 ## 9. Next steps
 

@@ -3,7 +3,7 @@ Base project template featuring my custom Claude skills, artifacts, and structur
 
 ## Status
 
-Planning. Nothing is built yet. The research, decisions and open questions are in **[docs/important-notes.md](docs/important-notes.md)**.
+Under construction. The foundation is in place: `AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json` and `docs/ai-workflow.md`. The artefact templates, design system layer, skills and validation scripts are still to come. The research, decisions and open questions are in **[docs/important-notes.md](docs/important-notes.md)**.
 
 ## Best suited for
 
@@ -33,7 +33,7 @@ Each template is a blank, structured document in your project workspace that you
 
 ## How to use this repo
 
-> This describes the intended workflow. The files it mentions are not built yet (see Status).
+> This describes the intended workflow. Some of the files it mentions are not built yet (see Status).
 
 ### Where this repo fits
 
