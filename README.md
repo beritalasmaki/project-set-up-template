@@ -1,4 +1,4 @@
-# project-set-up-template
+# Project set-up template
 Base project template featuring my custom Claude skills, artifacts, and structured AI workflows.
 
 ## Status
