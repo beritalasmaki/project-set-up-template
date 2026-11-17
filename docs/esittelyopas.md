@@ -18,7 +18,7 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 
 | Kansio tai tiedosto | Mitä se on | Tila |
 |---|---|---|
-| `README.md` | Esittely englanniksi: mihin projekteihin sopii, miten käytetään | valmis (päivitetään lopuksi) |
+| `README.md` | Esittely englanniksi: mihin projekteihin sopii, miten käytetään | valmis |
 | `AGENTS.md` ja `CLAUDE.md` | Tekoälyn perussäännöt. Lyhyt hakemisto (alle 100 riviä), ei pitkä sääntökirja | valmis |
 | `project.config.md` | Projektin perustiedot: saavutettavuustaso, tietoluokat, kielet, sidosryhmien roolit, asiakkaan säännöt tekoälylle | valmis |
 | `artefacts/` | 12 mallipohjaa (00–11) ja fiktiiviset esimerkit viidelle ydindokumentille | valmis |
@@ -113,7 +113,7 @@ Nämä ovat se vastaus kysymykseen "miten voi luottaa tekoälyn tekemään työh
 Älä esitä valmiiksi sitä, mikä ei ole valmis.
 
 - **Valmis:** perusta (M1), mallipohjat (M2), suunnittelujärjestelmän kerros ja esimerkit (M3), skillit (M4) ja tarkistusskriptit (M5).
-- **Ei vielä tehty:** loppusiivous ja README:n viimeistely (M6).
+- **README on kirjoitettu työnkulun läpikäynniksi (M6).** Ei vielä tehty: kokeilu oikeassa projektissa, trigger-testien ajaminen ja repon merkitseminen GitHubissa mallipohjaksi (Settings, Template repository), jotta "Use this template" -painike näkyy.
 - **Mallipohjia ja skillejä ei ole vielä käytetty oikeassa projektissa.** Skillien laukeamista varten on testikehotteet (`evals/trigger-tests.md`), mutta niitä ei ole vielä ajettu. Sano mieluummin "ensimmäinen versio, kokeillaan seuraavassa projektissa".
 - **Tarkistusskriptit on testattu**, myös tahallaan rikotulla kopiolla. Kontrastilaskuri antaa samat tulokset kuin tunnetut vertailuarvot (esim. musta valkoisella 21:1).
 - **Esimerkkien annotaatiot ovat luonnoksia.** Ne on kirjoitettu lukemalla omia projektejasi, ja sinun pitää tarkistaa, että kuvaus siitä mitä päätit ja mistä luovuit pitää paikkansa.
