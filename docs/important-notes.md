@@ -123,7 +123,7 @@ scripts/         lint-tokens · validate-template
 - **`SETUP.md`:** replaced by `docs/using-this-template.md`.
 - **Validation:** `validate-template` is a priority. `lint-tokens` is an optional script to copy into a project with code.
 - **Skills are grouped by workflow stage, not by folder.** The Claude Code docs describe only the flat layout `.claude/skills/<name>/SKILL.md`, and say nothing about grouping skills in sub-folders, so stage folders risk skills not loading. Each skill names its stage in `metadata.stage` (a free-form field the docs reserve for your own tooling). `docs/skills.md` is generated from it and lists the six stages from `docs/ai-workflow.md`, with a note where a stage has no skill yet. The validator rejects an unknown stage.
-- **Skill gaps found by the stage view:** stage 1 (frame the problem) and stage 3 (design) have no skill yet, although artefacts 01 and 04 exist. Candidates: a problem-framing skill and a user-flow-and-states skill.
+- **Skill gaps found by the stage view:** stages 1 and 3 had no skill. Closed with `problem-framing` and `user-flow-and-states`. Every stage now has at least one skill.
 
 - **Repo visibility:** the template repo is public, so it must never contain client data or confidential material. Project workspaces created from it are private.
 - **Scaffold:** none. The template holds docs, artefacts, skills and tokens only.
@@ -138,7 +138,7 @@ scripts/         lint-tokens · validate-template
 - **M2 artefact templates:** done. Twelve templates (00–11), `artefacts/AGENTS.md`, and fictional examples for the core five in `artefacts/examples/`. Examples for 04–09 and 11 are not written yet.
 - **Presenter guide:** `docs/esittelyopas.md` (Finnish, for the owner, not loaded by agents). Update its status sections as milestones land.
 - **M3 design system layer:** done. `design-system/` with `tokens.json` (starter values, contrast pairs), `rules.md`, a nested `AGENTS.md`, and five annotated examples from my own projects: spec before build, a decision record that corrects itself, principles with trade-offs, honest scope, a design iteration. Annotations are drafts for the owner to confirm.
-- **M4 skills:** done. Seven skills: `a11y-gate` (with `scripts/contrast.py`), `stakeholder-map`, `security-privacy-brief`, `procurement-ready-handoff`, `nda-safe-case-study` (with `scripts/scan-confidential.py`), `decision-log`, `sameness-check`. Trigger prompts are in `evals/trigger-tests.md`. They are written but **not yet run**.
+- **M4 skills:** done. Nine skills: `problem-framing`, `user-flow-and-states`, `a11y-gate` (with `scripts/contrast.py`), `stakeholder-map`, `security-privacy-brief`, `procurement-ready-handoff`, `nda-safe-case-study` (with `scripts/scan-confidential.py`), `decision-log`, `sameness-check`. Trigger prompts are in `evals/trigger-tests.md`. They are written but **not yet run**.
 - **M5 validation:** done. `scripts/validate-template.py` (also generates `docs/skills.md`), `scripts/lint-tokens.py` (optional, for projects with code) and `.github/workflows/validate.yml`. Tested, including a deliberately broken copy.
 - **M6 showcase pass:** next.
 

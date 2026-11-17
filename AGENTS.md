@@ -44,6 +44,7 @@ The owner is a senior UX/product designer working on public sector and B2B proje
 - `docs/ai-workflow.md`: roles, workflow, session habits. Human-facing, read only when asked.
 - `docs/important-notes.md`: planning notes and decisions for the template itself.
 - `artefacts/`: spec templates and the filled-in project documents.
+- `design-system/`: tokens, rules and annotated examples. Read before producing UI.
 - `.claude/skills/`: skills, loaded when a task matches their description.
 
 Files listed in the README but not present yet are planned. Do not assume they exist.

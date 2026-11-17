@@ -26,8 +26,8 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 | `docs/important-notes.md` | Suunnittelumuistiinpanot ja tehdyt päätökset tästä repostä | valmis |
 | `.claude/settings.json` | Estosäännöt (esim. salaisuustiedostoja ei lueta). Syntaksi varmistettu Clauden dokumentaatiosta | valmis |
 | `design-system/` | Design tokenit (aloitusarvot), säännöt ja viisi annotoitua esimerkkiä omasta työstäni: spec ennen toteutusta, päätösmerkintä joka korjaa itseään, periaatteet kompromisseineen, rehellinen rajaus, suunnittelun iteraatio | valmis. Annotaatiot ovat luonnoksia, tarkista ne |
-| `.claude/skills/` | Seitsemän omaa skilliä: saavutettavuustarkistus (laskee kontrastin skriptillä), sidosryhmäkartta, tietoturva- ja yksityisyyskatsaus, hankintavalmis luovutus, NDA-turvallinen case study, päätösloki, samankaltaisuustarkistus | valmis, ei vielä kokeiltu oikeassa projektissa |
-| `docs/skills.md` | Skillien luettelo ryhmiteltynä työnkulun kuuden vaiheen mukaan. Generoidaan skillien omista tiedoista, joten se ei vanhene. Vaiheissa 1 ja 3 ei vielä ole skilliä, ja luettelo sanoo sen näkyvästi | valmis |
+| `.claude/skills/` | Yhdeksän omaa skilliä: ongelman muotoilu, käyttäjävirrat ja tilat, saavutettavuustarkistus (laskee kontrastin skriptillä), sidosryhmäkartta, tietoturva- ja yksityisyyskatsaus, hankintavalmis luovutus, NDA-turvallinen case study, päätösloki, samankaltaisuustarkistus | valmis, ei vielä kokeiltu oikeassa projektissa |
+| `docs/skills.md` | Skillien luettelo ryhmiteltynä työnkulun kuuden vaiheen mukaan. Generoidaan skillien omista tiedoista, joten se ei vanhene. Jokaisessa vaiheessa on nyt vähintään yksi skilli, ja luettelo näyttää tyhjän vaiheen näkyvästi jos sellainen syntyy | valmis |
 | `evals/` | Testikehotteet siihen, laukeavatko skillit oikein | kirjoitettu, ei vielä ajettu |
 | `scripts/` ja `.github/` | Tarkistus, että repo noudattaa omia sääntöjään (AGENTS.md alle 100 riviä, skillit kunnossa, linkit toimivat, tokenien kontrastit läpi). Pyörii GitHub Actionsissa. Lisäksi valinnainen tokenilinteri koodiprojekteihin | valmis ja testattu |
 

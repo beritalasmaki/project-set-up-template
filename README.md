@@ -3,7 +3,7 @@ Base project template featuring my custom Claude skills, artifacts, and structur
 
 ## Status
 
-Under construction. In place: the foundation (`AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`), the twelve artefact templates in `artefacts/` with fictional examples for the core five, the design system layer in `design-system/` (tokens, rules and five annotated examples from my own work), seven skills in `.claude/skills/` (grouped by workflow stage in `docs/skills.md`), and validation scripts in `scripts/` that run in CI. Not yet done: trying the template on a real project, and a final polish of this README. The research, decisions and open questions are in **[docs/important-notes.md](docs/important-notes.md)**.
+Under construction. In place: the foundation (`AGENTS.md`, `CLAUDE.md`, `project.config.md`, `.claude/settings.json`, `docs/ai-workflow.md`), the twelve artefact templates in `artefacts/` with fictional examples for the core five, the design system layer in `design-system/` (tokens, rules and five annotated examples from my own work), nine skills in `.claude/skills/` (grouped by workflow stage in `docs/skills.md`), and validation scripts in `scripts/` that run in CI. Not yet done: trying the template on a real project, and a final polish of this README. The research, decisions and open questions are in **[docs/important-notes.md](docs/important-notes.md)**.
 
 ## Best suited for
 

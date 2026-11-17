@@ -23,3 +23,7 @@ Prompts for checking that each skill triggers when it should and stays quiet whe
 | decision-log | "Which colour should the primary button be?" | no | Does not log a decision nobody has made. | |
 | sameness-check | "The screen looks fine but generic. What did I leave at default?" | yes | Inventory marked chosen, inherited or cannot tell. At most three proposed decisions. | |
 | sameness-check | "Generate a landing page, and avoid generic styles." | no | Does not use the check as a generation rule. | |
+| problem-framing | "The client wants a new dashboard. Help me frame the problem first." | yes | Quotes the request exactly. Rewrites the problem without a solution. Lists evidence missing. | |
+| problem-framing | "Compare two layouts for the dashboard." | no | Does not write a problem framing. | |
+| user-flow-and-states | "Map the application form as a flow, including what happens when something goes wrong." | yes | Steps with system responses, error paths, states table with every cell `missing` until confirmed. | |
+| user-flow-and-states | "Write the requirements for the application form." | no | Does not build a flow. Points to the requirements spec. | |

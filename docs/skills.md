@@ -7,7 +7,9 @@ The skills sit in one flat folder (`.claude/skills/`), the layout Claude Code do
 
 Artefacts: 00 product context, 01 problem framing
 
-_No skill for this stage yet._
+| Skill | What it does and when it is used |
+|---|---|
+| `problem-framing` | Builds the problem framing in artefacts/01-problem-framing.md from a request, brief or kick-off notes, quoting the request as handed over, restating the problem as a user situation with no solution inside it, separating evidence on hand from evidence missing, listing what is not being solved, and placing hypotheses by risk and value. Use when handed a feature request or a vague brief, at the start of a project, or when asked to frame or reframe a problem before design. Do not use for choosing between design options, for writing requirements (artefacts/03-requirements-spec.md), or for planning user research. |
 
 ## 2. Understand the people
 
@@ -21,7 +23,9 @@ Artefacts: 02 stakeholder map, 03 requirements spec
 
 Artefacts: 04 user flows and states, 07 design system rules
 
-_No skill for this stage yet._
+| Skill | What it does and when it is used |
+|---|---|
+| `user-flow-and-states` | Builds artefacts/04-user-flows-and-states.md for one task, with entry points, numbered steps pairing what the user does with how the system responds, decision points with the assumption behind each, error and recovery paths, exits, a table of screens against states, an edge-case sweep, and gaps ordered by what blocks the build first. Use when asked to map a flow, work out what happens when something goes wrong, list screen states, or before designing or handing off a task. Do not use for visual design, for writing requirements, or to mark a state as designed when no design exists. |
 
 ## 4. Check
 
