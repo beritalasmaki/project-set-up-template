@@ -1,6 +1,8 @@
 ---
 name: security-privacy-brief
 description: Builds the design-stage security and privacy brief in artefacts/06-security-privacy-brief.md from screens, flows and requirements, covering data items and classes, who sees what, roles and permissions, sign-in and session behaviour, consent and retention, audit needs, AI in the product, and open questions for the security and data protection owners. Use when asked about data handling, permissions or roles in a design, personal or sensitive data on screens, or before handoff of a product with several user roles. Do not use for a security review, a penetration test, legal advice or a data protection impact assessment.
+metadata:
+  stage: check
 ---
 
 # Security and privacy brief

@@ -1,6 +1,8 @@
 ---
 name: sameness-check
 description: Reviews one finished design draft for choices left at default, listing typeface, colour, background, layout pattern, radius and shadow, iconography, motion and phrasing, marking each as chosen or inherited, and proposing up to three places for a real decision. Use after a draft exists, when a screen looks fine but could belong to any product, or before sharing a design. Do not use while generating a design, as a list of banned styles, or for accessibility checks (use a11y-gate).
+metadata:
+  stage: check
 ---
 
 # Sameness check

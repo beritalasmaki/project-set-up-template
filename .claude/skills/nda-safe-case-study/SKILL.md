@@ -1,6 +1,8 @@
 ---
 name: nda-safe-case-study
 description: Turns project notes and decision records into portfolio case study notes in artefacts/11-case-study-notes.md that are safe to publish, with permission checked first, confidential details removed or generalised, decisions shown with options and trade-offs, outcomes taken only from real data, and an anonymisation check. Use when asked to write up a project for a portfolio, prepare a case study from client work, or check a draft for confidential details. Do not use to invent outcomes, user quotes or metrics, and do not use for projects where publication has not been approved.
+metadata:
+  stage: record
 ---
 
 # NDA-safe case study

@@ -1,6 +1,8 @@
 ---
 name: stakeholder-map
 description: Builds or updates the stakeholder map in artefacts/02-stakeholder-map.md from kick-off notes, meeting notes and organisation information, with roles (not personal names), interests, decision rights, conflicts set side by side, and gaps for stakeholders not yet met. Use when asked to map stakeholders, work out who decides what, prepare for a multi-stakeholder review, or after a kick-off or a change of people. Do not use for sorting review comments (that is artefacts/09-stakeholder-feedback-log.md), for user personas, or for deciding between stakeholders.
+metadata:
+  stage: people
 ---
 
 # Stakeholder map

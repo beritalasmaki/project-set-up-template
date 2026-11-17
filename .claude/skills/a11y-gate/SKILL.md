@@ -1,6 +1,8 @@
 ---
 name: a11y-gate
 description: Runs a design-stage accessibility check of one screen or flow against WCAG 2.2 at the level set in project.config.md, answering each check pass, fail or cannot tell from a design, writing each fix as a design change, and listing what only code, assistive technology and disabled users can show. Uses a script for contrast and target-size maths. Use when asked to check accessibility of a design, review contrast, focus order or target size, fill in artefacts/05-accessibility-checklist.md, or before sharing or handing off a design. Do not use to claim conformance, to audit built code, or to replace testing with disabled users.
+metadata:
+  stage: check
 ---
 
 # Accessibility gate

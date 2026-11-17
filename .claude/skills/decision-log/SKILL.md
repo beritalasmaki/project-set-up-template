@@ -1,6 +1,8 @@
 ---
 name: decision-log
 description: Adds decision records to artefacts/10-decision-log.md from meeting notes, review notes or the designer's description, with the decider as a role, the reason taken from the notes or marked as a gap, options, what was given up, a revisit trigger, and an updated index. Use right after a meeting or review where something was decided, when asked to record a decision, or when a decision is reopened, changed or superseded. Do not use for minor choices nobody will question, for sorting review comments, or to invent a reason that is not in the notes.
+metadata:
+  stage: record
 ---
 
 # Decision log

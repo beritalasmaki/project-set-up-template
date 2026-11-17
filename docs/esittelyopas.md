@@ -27,7 +27,7 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 | `.claude/settings.json` | Estosäännöt (esim. salaisuustiedostoja ei lueta). Syntaksi varmistettu Clauden dokumentaatiosta | valmis |
 | `design-system/` | Design tokenit (aloitusarvot), säännöt ja viisi annotoitua esimerkkiä omasta työstäni: spec ennen toteutusta, päätösmerkintä joka korjaa itseään, periaatteet kompromisseineen, rehellinen rajaus, suunnittelun iteraatio | valmis. Annotaatiot ovat luonnoksia, tarkista ne |
 | `.claude/skills/` | Seitsemän omaa skilliä: saavutettavuustarkistus (laskee kontrastin skriptillä), sidosryhmäkartta, tietoturva- ja yksityisyyskatsaus, hankintavalmis luovutus, NDA-turvallinen case study, päätösloki, samankaltaisuustarkistus | valmis, ei vielä kokeiltu oikeassa projektissa |
-| `docs/skills.md` | Skillien luettelo, generoidaan skillien kuvauksista | valmis |
+| `docs/skills.md` | Skillien luettelo ryhmiteltynä työnkulun kuuden vaiheen mukaan. Generoidaan skillien omista tiedoista, joten se ei vanhene. Vaiheissa 1 ja 3 ei vielä ole skilliä, ja luettelo sanoo sen näkyvästi | valmis |
 | `evals/` | Testikehotteet siihen, laukeavatko skillit oikein | kirjoitettu, ei vielä ajettu |
 | `scripts/` ja `.github/` | Tarkistus, että repo noudattaa omia sääntöjään (AGENTS.md alle 100 riviä, skillit kunnossa, linkit toimivat, tokenien kontrastit läpi). Pyörii GitHub Actionsissa. Lisäksi valinnainen tokenilinteri koodiprojekteihin | valmis ja testattu |
 
@@ -143,6 +143,9 @@ Pienessä projektissa on. Siksi ydindokumentteja on viisi ja muut lisätään ta
 
 **Miten tämä auttaa monen sidosryhmän projektissa?**
 Sidosryhmäkartta, päätöslokki ja palautteen lokiin kirjaus tekevät näkyväksi kuka päättää, mikä on ristiriidassa ja miksi jokin ratkaisu tehtiin.
+
+**Miksi skillit eivät ole vaiheittain omissa kansioissaan?**
+Clauden dokumentaatio kuvaa vain tasaisen rakenteen (`.claude/skills/<skillin nimi>/SKILL.md`), eikä kerro tukeeko se alikansioita. Vaarana olisi, että skillit eivät lataudu. Siksi jokainen skilli kertoo vaiheensa omissa tiedoissaan (`metadata.stage`), ja `docs/skills.md` ryhmittelee ne vaiheittain. Ryhmittely on sama, mutta mikään ei rikkoudu.
 
 ---
 

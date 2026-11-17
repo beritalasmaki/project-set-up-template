@@ -1,6 +1,8 @@
 ---
 name: procurement-ready-handoff
 description: Builds the handoff spec in artefacts/08-handoff-spec.md for engineering and other vendors, stating which file and version is final, putting behaviour rules beside each screen, listing dependencies and what each vendor provides, running a ready check, and listing open questions per party. Use when designs are about to go to engineering or another supplier, when several vendors build parts of one product, or when asked for a handoff spec or ready check. Do not use for design critique, for writing contracts or procurement documents, or for work that is still being explored.
+metadata:
+  stage: handoff
 ---
 
 # Procurement-ready handoff

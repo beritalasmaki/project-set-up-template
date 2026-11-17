@@ -122,6 +122,8 @@ scripts/         lint-tokens · validate-template
 - **`docs/ai-workflow.md`:** human-facing page covering roles, the workflow, where AI is not used, how claims are handled, and session hygiene. It is not loaded as context by default.
 - **`SETUP.md`:** replaced by `docs/using-this-template.md`.
 - **Validation:** `validate-template` is a priority. `lint-tokens` is an optional script to copy into a project with code.
+- **Skills are grouped by workflow stage, not by folder.** The Claude Code docs describe only the flat layout `.claude/skills/<name>/SKILL.md`, and say nothing about grouping skills in sub-folders, so stage folders risk skills not loading. Each skill names its stage in `metadata.stage` (a free-form field the docs reserve for your own tooling). `docs/skills.md` is generated from it and lists the six stages from `docs/ai-workflow.md`, with a note where a stage has no skill yet. The validator rejects an unknown stage.
+- **Skill gaps found by the stage view:** stage 1 (frame the problem) and stage 3 (design) have no skill yet, although artefacts 01 and 04 exist. Candidates: a problem-framing skill and a user-flow-and-states skill.
 
 - **Repo visibility:** the template repo is public, so it must never contain client data or confidential material. Project workspaces created from it are private.
 - **Scaffold:** none. The template holds docs, artefacts, skills and tokens only.
