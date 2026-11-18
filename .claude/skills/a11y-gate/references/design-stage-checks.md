@@ -46,4 +46,4 @@ Always list these, whatever the table says:
 - Zoom to 200% and 400%, reflow, text spacing in a browser
 - Timing and animation behaviour
 - Forced colours and other user settings
-- How disabled people get through the task
+- How users with access needs get through the task

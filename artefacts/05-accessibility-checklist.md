@@ -42,7 +42,7 @@ Each answer is `pass`, `fail` or `cannot tell from a design`. Contrast and size 
 
 - Screen reader output: to test in code
 - Real focus behaviour, zoom in a browser, timing: to test in code
-- How disabled people get through the task: sessions [planned / not yet planned]
+- How users with access needs get through the task: sessions [planned / not yet planned]
 
 ## Status line to use when sharing
 
@@ -50,7 +50,7 @@ Each answer is `pass`, `fail` or `cannot tell from a design`. Contrast and size 
 
 ## Decision
 
-[Designer role] makes or declines each fix by [date]. [Owner role] decides by [date] when the coded build is tested with assistive technology and disabled users.
+[Designer role] makes or declines each fix by [date]. [Owner role] decides by [date] when the coded build is tested with assistive technology and users with access needs.
 
 ## Done when
 

@@ -18,7 +18,7 @@ flowchart TD
         S2["2. Understand the people<br/>skill: stakeholder-map<br/>artefacts: 02, 03"]
         S3["3. Design<br/>skill: user-flow-and-states<br/>artefacts: 04, 07"]
         S4["4. Check<br/>skills: a11y-gate, security-privacy-brief, sameness-check<br/>artefacts: 05, 06"]
-        RP["Real people<br/>user testing, testing with assistive technology and disabled users,<br/>security review, legal advice. AI never stands in for these."]
+        RP["Real people<br/>user testing, testing with assistive technology and users with access needs,<br/>security review, legal advice. AI never stands in for these."]
         S5["5. Hand off<br/>skill: procurement-ready-handoff<br/>artefacts: 08, 09"]
         S6["6. Record and reflect<br/>skill: nda-safe-case-study<br/>artefact: 11"]
         S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6

@@ -20,7 +20,7 @@ Use roles, not personal names, and placeholders such as `[Client]`. This file mu
 - **Target level:** WCAG 2.2 AA (change only if the client specifies otherwise)
 - **Regulatory or contractual basis:** [for example "public sector accessibility rules", "client requirement", "none", or `unknown`]
 - **Assistive technology the team will test with:** [screen readers, magnification, voice control, or `unknown`]
-- **Who will test with disabled users, and when:** [role and date, or `not planned`]
+- **Who will test with users who have access needs, and when:** [role and date, or `not planned`]
 
 ## Data and security
 
