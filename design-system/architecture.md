@@ -17,6 +17,15 @@ Each layer may use the layers below it, never the ones above. Dependencies point
 
 If a component needs something from a higher layer, the layers are wrong. Move the shared part down.
 
+### Naming the layers for developers
+
+Atomic design terms (atoms, molecules, organisms) are familiar to many designers, but developers often expect a plain `components/` folder. So:
+
+- **Keep the root folder `components/`.** Do not rename it, and do not add suffixes such as `atom-components`.
+- **Do not put the layer in the folder path.** Organise code by type (section 2). Layers *explain* the system, they do not *locate* files. A component's layer can change: a button gains an icon and a loading state, and is it still an atom? With the layer in the path, a change means renaming imports across the codebase.
+- **In documentation, name each layer in plain words, with the atomic term in brackets the first time:** Basic components (atoms), Composite components (molecules), Sections (organisms), Page layouts (templates). After that, use whichever the team prefers.
+- **Follow the team's existing convention.** If the codebase already uses `components/ui` for basic components (the default in shadcn/ui), keep it. Write the mapping down in `artefacts/07-design-system-rules.md`.
+
 ## 2. Folders: organise code by type, show the layers in the docs
 
 Two ways to organise components. Choose one per project and write it down in `07`.
@@ -37,7 +46,7 @@ components/
   notifications/
   icons/
 docs/                components that exist only to build the documentation site
-pages/               documentation, grouped by layer: atoms, molecules, organisms, templates
+pages/               documentation, grouped by layer: basic, composite, sections, page layouts
 ```
 
 Names are examples. Use the project's own component types, plural, and keep them consistent.
