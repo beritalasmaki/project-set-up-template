@@ -48,7 +48,7 @@ Artefacts 00, 03, 07 and 09 have no skill of their own. I fill them in with Clau
 | `docs/ai-workflow.md` | How I work with AI: roles, limits, session habits |
 | `docs/skills.md` | Skill catalogue by stage, generated from the skills |
 | `evals/` | Trigger prompts for checking that each skill loads when it should |
-| `scripts/`, `.github/` | The checks that keep this repo to its own rules |
+| `scripts/`, `.github/` | A self-check that runs automatically on every push, so the repo cannot quietly drift away from its own rules (see below) |
 
 ## What the artefact templates are for
 
@@ -170,6 +170,8 @@ The short version of what Claude is never allowed to do here. The full rules are
 ## How the repo keeps its own rules
 
 Rules written in a file are easy to break. This repo checks itself.
+
+**Why it matters.** Without a check, a rule fails silently: `AGENTS.md` grows past the length where Claude follows it well, a skill's description stops it from loading, a colour change drops below the contrast minimum. A GitHub Action runs the check on every push, so whoever made the change, me or Claude, finds out straight away from a red mark on the commit, and nobody has to remember to run it. It also means changes Claude makes are verified by a fixed check, not taken on trust. To run it yourself: `python3 scripts/validate-template.py`.
 
 - `scripts/validate-template.py` fails if `AGENTS.md` goes over 100 lines, a skill has bad frontmatter or no "when not to use", a skill folder gets a stray README, an artefact has no "Done when" section, a link is broken, a skill names an unknown stage, the catalogue is out of date, or any token colour pair falls below its contrast minimum. A GitHub Action runs it on every push.
 - `a11y-gate/scripts/contrast.py` does the contrast and target-size maths. Claude does not estimate it. I checked it against known values.
