@@ -50,17 +50,17 @@ flowchart TD
 
     subgraph STAGES["Kuusi vaihetta. Skilli luonnostelee, minä päätän."]
         direction TB
-        S1["1. Ongelman muotoilu<br/>skilli: problem-framing<br/>artefaktit: 00, 01"]
-        S2["2. Ihmisten ymmärtäminen<br/>skilli: stakeholder-map<br/>artefaktit: 02, 03"]
-        S3["3. Suunnittelu<br/>skilli: user-flow-and-states<br/>artefaktit: 04, 07"]
-        S4["4. Tarkistus<br/>skillit: a11y-gate, security-privacy-brief, sameness-check<br/>artefaktit: 05, 06"]
+        S1["<b>1. Ongelman muotoilu</b><br/>Tekoälyn ohje (skill): problem-framing<br/>Dokumentit: 00 tuotekonteksti · 01 ongelman muotoilu"]
+        S2["<b>2. Ihmisten ymmärtäminen</b><br/>Tekoälyn ohje (skill): stakeholder-map<br/>Dokumentit: 02 sidosryhmäkartta · 03 vaatimusmäärittely"]
+        S3["<b>3. Suunnittelu</b><br/>Tekoälyn ohje (skill): user-flow-and-states<br/>Dokumentit: 04 käyttäjävirrat ja tilat · 07 suunnittelujärjestelmän säännöt"]
+        S4["<b>4. Tarkistus</b><br/>Tekoälyn ohjeet (skillit): a11y-gate · security-privacy-brief · sameness-check<br/>Dokumentit: 05 saavutettavuuslista · 06 tietoturva- ja yksityisyyskatsaus"]
         RP["Oikeat ihmiset<br/>käyttäjätestaus, testaus avustavilla teknologioilla ja vammaisten käyttäjien kanssa,<br/>tietoturvakatselmointi, juridinen neuvonta. Tekoäly ei korvaa näitä."]
-        S5["5. Luovutus<br/>skilli: procurement-ready-handoff<br/>artefaktit: 08, 09"]
-        S6["6. Kirjaaminen ja pohdinta<br/>skilli: nda-safe-case-study<br/>artefakti: 11"]
+        S5["<b>5. Luovutus</b><br/>Tekoälyn ohje (skill): procurement-ready-handoff<br/>Dokumentit: 08 luovutusmäärittely · 09 sidosryhmäpalautteen loki"]
+        S6["<b>6. Kirjaaminen ja pohdinta</b><br/>Tekoälyn ohje (skill): nda-safe-case-study<br/>Dokumentit: 11 case study -muistiinpanot"]
         S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6
     end
 
-    STAGES -.- D["Koko ajan: päätösloki<br/>skilli: decision-log, artefakti 10<br/>jokaisen palaverin tai katselmoinnin jälkeen"]
+    STAGES -.- D["<b>Koko ajan: päätösloki</b><br/>Tekoälyn ohje (skill): decision-log<br/>Dokumentti: 10 päätösloki<br/>jokaisen palaverin tai katselmoinnin jälkeen"]
     STAGES -.- G["Koko ajan: suojakaiteet<br/>ei väitteitä ilman todisteita, ei asiakasdataa,<br/>ei salaisuuksia, roolit eikä nimet"]
 ```
 
