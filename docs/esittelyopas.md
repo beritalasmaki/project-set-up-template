@@ -27,7 +27,7 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 | `docs/ai-workflow.md` | Miten käytän tekoälyä: roolit, rajat, istuntotavat | valmis |
 | `docs/important-notes.md` | Suunnittelumuistiinpanot ja tehdyt päätökset tästä repostä | valmis |
 | `.claude/settings.json` | Estosäännöt (esim. salaisuustiedostoja ei lueta). Syntaksi varmistettu Clauden dokumentaatiosta | valmis |
-| `design-system/` | Design tokenit (aloitusarvot), säännöt ja viisi annotoitua esimerkkiä omasta työstäni: spec ennen toteutusta, päätösmerkintä joka korjaa itseään, periaatteet kompromisseineen, rehellinen rajaus, suunnittelun iteraatio | valmis. Annotaatiot ovat luonnoksia, tarkista ne |
+| `design-system/` | Design tokenit (aloitusarvot), säännöt, arkkitehtuuriohje (kerrokset, kansiorakenne, komponentin lisäämisen säännöt) ja viisi annotoitua esimerkkiä omasta työstäni: spec ennen toteutusta, päätösmerkintä joka korjaa itseään, periaatteet kompromisseineen, rehellinen rajaus, suunnittelun iteraatio | valmis. Annotaatiot ovat luonnoksia, tarkista ne |
 | `.claude/skills/` | Yhdeksän omaa skilliä: ongelman muotoilu, käyttäjävirrat ja tilat, saavutettavuustarkistus (laskee kontrastin skriptillä), sidosryhmäkartta, tietoturva- ja yksityisyyskatsaus, hankintavalmis luovutus, NDA-turvallinen case study, päätösloki, samankaltaisuustarkistus | valmis, ei vielä kokeiltu oikeassa projektissa |
 | `docs/skills.md` | Skillien luettelo ryhmiteltynä työnkulun kuuden vaiheen mukaan. Generoidaan skillien omista tiedoista, joten se ei vanhene. Jokaisessa vaiheessa on nyt vähintään yksi skilli, ja luettelo näyttää tyhjän vaiheen näkyvästi jos sellainen syntyy | valmis |
 | `evals/` | Testikehotteet siihen, laukeavatko skillit oikein | kirjoitettu, ei vielä ajettu |

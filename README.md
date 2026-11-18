@@ -59,7 +59,7 @@ Full guide with example prompts: **[docs/using-this-template.md](docs/using-this
 | `AGENTS.md`, `CLAUDE.md` | Short ground rules for AI agents |
 | `project.config.md` | Per-project facts: accessibility level, data, stakeholders, client rules on AI |
 | `artefacts/` | Twelve fill-in templates and fictional examples |
-| `design-system/` | Starter tokens, rules and annotated examples |
+| `design-system/` | Starter tokens, rules, an architecture guide and annotated examples |
 | `.claude/` | Nine skills, and settings that block reading secrets |
 | `docs/` | How I work with AI, skill catalogue, diagrams, notes |
 | `evals/`, `scripts/`, `.github/` | Skill tests, and a self-check that runs on every push |

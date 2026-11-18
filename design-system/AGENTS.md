@@ -5,8 +5,9 @@ Loads when you design or build UI, or edit tokens.
 ## Before producing UI
 
 1. Read `rules.md` and `tokens.json`. In a real project, also read `artefacts/07-design-system-rules.md`, which overrides the starter values here.
-2. Read the one or two examples in `examples/` that match the task (see below). Do not read them all.
-3. Use token names, never raw values. If a token or component you need is missing, say so. Do not invent one.
+2. If the task is about structure, such as adding a component, organising folders or proposing an architecture, also read `architecture.md`.
+3. Read the one or two examples in `examples/` that match the task (see below). Do not read them all.
+4. Use token names, never raw values. If a token or component you need is missing, say so. Do not invent one.
 
 ## Examples
 
@@ -28,4 +29,5 @@ List which choices were left at default (type, colour, layout pattern, radius, m
 
 - A token value or name
 - A component's props or API
+- The folder structure or where a component lives
 - The spacing scale
