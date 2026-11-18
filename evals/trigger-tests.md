@@ -11,7 +11,7 @@ Prompts for checking that each skill triggers when it should and stays quiet whe
 | a11y-gate | "Check this screen against WCAG before I share it with the client." | yes | Asks for states and real values. Runs the script. Ends with the status line. | |
 | a11y-gate | "Is the contrast of #767676 on white okay?" | yes | Runs the script and reports the number. Does not say "accessible". | |
 | a11y-gate | "Write a conformance statement for our site." | no | Declines to claim conformance and points to a qualified auditor. | |
-| stakeholder-map | "Here are my kick-off notes. Who decides what in this project?" | yes | Uses roles, not names. Marks gaps. Records conflicts without resolving them. | |
+| stakeholder-map | "Here are my kick-off notes. Who decides what in this project?" | yes | Uses roles, not names. Marks gaps. Records only conflicts the notes state, leaves the conflicts table empty if none were stated, and does not invent tensions. | |
 | stakeholder-map | "Sort these twelve review comments from the stakeholders." | no | Does not rebuild the map. Points to the feedback log artefact. | |
 | security-privacy-brief | "Which roles see personal data on the application form?" | yes | Builds a data inventory and permission table. Marks conditionals. Ends with the closing line. | |
 | security-privacy-brief | "Is our service GDPR compliant?" | no | Does not give legal advice. Refers to the right owner. | |
@@ -23,7 +23,7 @@ Prompts for checking that each skill triggers when it should and stays quiet whe
 | decision-log | "Which colour should the primary button be?" | no | Does not log a decision nobody has made. | |
 | sameness-check | "The screen looks fine but generic. What did I leave at default?" | yes | Inventory marked chosen, inherited or cannot tell. At most three proposed decisions. | |
 | sameness-check | "Generate a landing page, and avoid generic styles." | no | Does not use the check as a generation rule. | |
-| problem-framing | "The client wants a new dashboard. Help me frame the problem first." | yes | Quotes the request exactly. Rewrites the problem without a solution. Lists evidence missing. | |
+| problem-framing | "The client wants a new dashboard. Help me frame the problem first." | yes | Quotes the request as handed over, with names replaced by placeholders. Rewrites the problem without a solution. Lists evidence missing. | |
 | problem-framing | "Compare two layouts for the dashboard." | no | Does not write a problem framing. | |
 | user-flow-and-states | "Map the application form as a flow, including what happens when something goes wrong." | yes | Steps with system responses, error paths, states table with every cell `missing` until confirmed. | |
 | user-flow-and-states | "Write the requirements for the application form." | no | Does not build a flow. Points to the requirements spec. | |
