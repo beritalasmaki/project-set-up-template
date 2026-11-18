@@ -18,7 +18,9 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 
 | Kansio tai tiedosto | Mitä se on | Tila |
 |---|---|---|
-| `README.md` | Esittely englanniksi: mihin projekteihin sopii, miten käytetään | valmis |
+| `README.md` | Lyhyt esittely englanniksi: idea, prosessikaavio, pikaohje ja kansiot | valmis |
+| `docs/using-this-template.md` | Täysi käyttöohje englanniksi: vaiheet, esimerkkikehotteet ja miksi artefaktit on olemassa | valmis |
+| `docs/workflow-map.md` | Kolme prosessikaaviota | valmis |
 | `AGENTS.md` ja `CLAUDE.md` | Tekoälyn perussäännöt. Lyhyt hakemisto (alle 100 riviä), ei pitkä sääntökirja | valmis |
 | `project.config.md` | Projektin perustiedot: saavutettavuustaso, tietoluokat, kielet, sidosryhmien roolit, asiakkaan säännöt tekoälylle | valmis |
 | `artefacts/` | 12 mallipohjaa (00–11) ja fiktiiviset esimerkit viidelle ydindokumentille | valmis |
@@ -117,7 +119,7 @@ Nämä ovat se vastaus kysymykseen "miten voi luottaa tekoälyn tekemään työh
 ### Lyhyt versio (3 minuuttia)
 
 1. Hissipuhe (kohta 1).
-2. Avaa `README.md`: "Sopii erityisesti…" ja "Miten käytetään".
+2. Avaa `README.md`: "Best suited for", prosessikaavio ja "Quick start". Täydet vaiheet ovat tiedostossa `docs/using-this-template.md`.
 3. Näytä `artefacts/examples/10-decision-log.example.md`: näin jäljitettävyys näyttää käytännössä.
 4. Sulje roolijaolla: tekoäly luonnostelee, minä päätän, oikeat ihmiset testaavat.
 
@@ -138,7 +140,7 @@ Nämä ovat se vastaus kysymykseen "miten voi luottaa tekoälyn tekemään työh
 Älä esitä valmiiksi sitä, mikä ei ole valmis.
 
 - **Valmis:** perusta (M1), mallipohjat (M2), suunnittelujärjestelmän kerros ja esimerkit (M3), skillit (M4) ja tarkistusskriptit (M5).
-- **README on kirjoitettu työnkulun läpikäynniksi (M6).** Ei vielä tehty: kokeilu oikeassa projektissa, trigger-testien ajaminen ja repon merkitseminen GitHubissa mallipohjaksi (Settings, Template repository), jotta "Use this template" -painike näkyy.
+- **README on lyhennetty (M6):** idea, kaavio, pikaohje ja kansiot. Täysi ohje on `docs/using-this-template.md`:ssä. Ei vielä tehty: kokeilu oikeassa projektissa, trigger-testien ajaminen ja repon merkitseminen GitHubissa mallipohjaksi (Settings, Template repository), jotta "Use this template" -painike näkyy.
 - **Mallipohjia ja skillejä ei ole vielä käytetty oikeassa projektissa.** Skillien laukeamista varten on testikehotteet (`evals/trigger-tests.md`), mutta niitä ei ole vielä ajettu. Sano mieluummin "ensimmäinen versio, kokeillaan seuraavassa projektissa".
 - **Tarkistusskriptit on testattu**, myös tahallaan rikotulla kopiolla. Kontrastilaskuri antaa samat tulokset kuin tunnetut vertailuarvot (esim. musta valkoisella 21:1).
 - **Esimerkkien annotaatiot ovat luonnoksia.** Ne on kirjoitettu lukemalla omia projektejasi, ja sinun pitää tarkistaa, että kuvaus siitä mitä päätit ja mistä luovuit pitää paikkansa.
