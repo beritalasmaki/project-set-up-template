@@ -45,7 +45,7 @@ flowchart TD
         S2["2. Ihmisten ymmärtäminen<br/>skilli: stakeholder-map<br/>artefaktit: 02, 03"]
         S3["3. Suunnittelu<br/>skilli: user-flow-and-states<br/>artefaktit: 04, 07"]
         S4["4. Tarkistus<br/>skillit: a11y-gate, security-privacy-brief, sameness-check<br/>artefaktit: 05, 06"]
-        RP["Oikeat ihmiset<br/>käyttäjätestaus, testaus avustavilla teknologioilla ja vammaisten käyttäjien kanssa,<br/>tietoturvakatselmointi, juridinen neuvonta. Tekoäly ei korvaa näitä."]
+        RP["Oikeat ihmiset<br/>käyttäjätestit (mukana myös käyttäjät, joilla on saavutettavuustarpeita),<br/>testaus apuvälineillä, tietoturvakatselmointi, juridinen neuvonta. Tekoäly ei korvaa näitä."]
         S5["5. Luovutus<br/>skilli: procurement-ready-handoff<br/>artefaktit: 08, 09"]
         S6["6. Kirjaaminen ja pohdinta<br/>skilli: nda-safe-case-study<br/>artefakti: 11"]
         S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6
@@ -72,7 +72,7 @@ Asiakkaalle toimitetaan tiedosto vain pyynnöstä tai projektin lopussa, esimerk
 
 - **Tekoäly:** luonnostelee rakenteen ja ensimmäisen version, yhdistää ja järjestää palautteen ja tekee tarkistuksia sovittuja kriteerejä vasten.
 - **Suunnittelija:** päättää suunnan, kompromissit ja sen, mitä julkaistaan.
-- **Oikeat ihmiset:** käyttäjätestaus, testaus avustavilla teknologioilla ja vammaisten käyttäjien kanssa, tietoturvakatselmointi ja juridinen neuvonta.
+- **Oikeat ihmiset:** käyttäjätestit (mukana myös käyttäjät, joilla on saavutettavuustarpeita), testaus apuvälineillä, tietoturvakatselmointi ja juridinen neuvonta.
 
 Säännöt, jotka tekoälyllä on aina:
 
@@ -105,7 +105,7 @@ Näin tekoälyn tekemän työn voi perustella myös ympäristössä, jossa jälj
 - **Ei vielä kokeiltu oikeassa projektissa.** Skillien laukeamista varten on testikehotteet (`evals/trigger-tests.md`), mutta niitä ei ole vielä ajettu.
 - **Esimerkit ovat fiktiivisiä** ja merkitty sellaisiksi. Esimerkit puuttuvat vielä pohjille 04–09 ja 11.
 - **Suunnittelujärjestelmän esimerkkien annotaatiot ovat luonnoksia.** Ne perustuvat tekijän omiin projekteihin, ja tekijän pitää vahvistaa ne.
-- **Saavutettavuuslista on suunnitteluvaiheen tarkistus, ei auditointi.** Se ei korvaa testausta avustavilla teknologioilla eikä vammaisten käyttäjien kanssa.
+- **Saavutettavuuslista on suunnitteluvaiheen tarkistus, ei auditointi.** Se ei korvaa testausta apuvälineillä eikä käyttäjätestejä käyttäjillä, joilla on saavutettavuustarpeita.
 - **Lisenssiä ei ole vielä määritelty.** Ilman lisenssiä muilla ei ole oikeutta käyttää sisältöä, vaikka repo on julkinen.
 - **Estosäännöt ja skillien rakenne on tarkistettu Clauden dokumentaatiosta.** Auki on vielä muun muassa se, ladataanko skill-kansion README tekoälyn kontekstiin (siksi sitä ei sallita). Katso [important-notes.md](important-notes.md).
 - **"Use this template" -painike** näkyy vain, jos repo on merkitty mallipohjaksi GitHubin asetuksissa (Settings, Template repository).
@@ -116,7 +116,7 @@ Näin tekoälyn tekemän työn voi perustella myös ympäristössä, jossa jälj
 Ei tässä mallissa. Tekoäly tekee rakenteen ja luonnokset. Päätökset, kompromissit ja vastuu pysyvät suunnittelijalla, ja käyttäjätestaus tehdään oikeilla ihmisillä.
 
 **Miten saavutettavuus varmistetaan?**
-Tekoäly ei varmista sitä. Suunnitteluvaiheessa tehdään tarkistus, jossa tulos on läpi, hylätty tai "ei voida päätellä suunnitelmasta". Varsinainen vaatimustenmukaisuus todennetaan toteutetusta tuotteesta avustavilla teknologioilla ja vammaisten käyttäjien kanssa.
+Tekoäly ei varmista sitä. Suunnitteluvaiheessa tehdään tarkistus, jossa tulos on läpi, hylätty tai "ei voida päätellä suunnitelmasta". Varsinainen vaatimustenmukaisuus todennetaan toteutetusta tuotteesta apuvälineillä ja käyttäjillä, joilla on saavutettavuustarpeita.
 
 **Mitä tapahtuu asiakkaan luottamukselliselle datalle?**
 Sitä ei viedä tekoälylle ilman asiakkaan lupaa. `project.config.md` kysyy asiakkaan säännöt tekoälystä ja materiaalin säilytyspaikasta heti alussa, ja siihen asti käytetään paikkamerkkejä. Työtila on yksityinen eikä päädy asiakkaan repoon.
