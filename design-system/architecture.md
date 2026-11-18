@@ -4,6 +4,14 @@ How to structure a design system so it stays small, consistent and easy for peop
 
 ## 1. Build in layers
 
+Build the system from the bottom up. Small parts are combined into bigger ones:
+
+`tokens` → `atoms` → `molecules` → `organisms` → `templates` → `pages`
+
+Tokens style the atoms. Atoms combine into molecules, molecules into organisms, and organisms are placed in templates. A template filled with real content becomes a page.
+
+**Example:** a label, an input and an error message (atoms) make a form field (molecule). Several form fields and a submit button make a form (organism). The form placed in a page layout is a form page (template).
+
 Each layer may use the layers below it, never the ones above. Dependencies point one way.
 
 | Layer | What it is | Examples |
