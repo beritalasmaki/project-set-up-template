@@ -96,7 +96,7 @@ Näin tekoälyn tekemän työn voi perustella myös ympäristössä, jossa jälj
 | Omat skillit | Kirjoitettu omasta käytännöstä ja julkisista lähteistä (WCAG 2.2, GOV.UK Service Manual, W3C WAI). Painopiste on julkisen sektorin ja B2B-työn tarpeissa. |
 | Yleiset standardit | `project.config.md` kertoo tason ja säädöspohjan, joten mallit eivät ole sidottuja yhteen maahan. |
 | Työtila ei ole asiakkaan repo | Asiakasdata ja salassapito pysyvät hallinnassa. |
-| Dokumenttien pääversio on Gitissä | Historia, yksi totuuden lähde ja tekoäly lukee tiedostot suoraan. Julkaistut kopiot ovat lukukopioita. Jira säilyy tikettityölle. |
+| Dokumenttien pääversio on Gitissä | Historia, yksi totuuden lähde ja tekoäly lukee tiedostot suoraan. Julkaistut kopiot ovat numeroituja ja päivättyjä versioita. Jira säilyy tikettityölle. |
 | Repo tarkistaa itse itsensä | Kirjoitettu sääntö rikkoutuu helposti hiljaa: `AGENTS.md` kasvaa liian pitkäksi, skillin kuvaus estää sen latautumisen tai värimuutos pudottaa kontrastin alle rajan. Automaattinen tarkistus huomaa tämän heti, kuka muutoksen tekikin. |
 
 ## Tila ja rajaukset
@@ -125,7 +125,7 @@ Sitä ei viedä tekoälylle ilman asiakkaan lupaa. `project.config.md` kysyy asi
 Pitkä sääntökirja ladataan joka kerta, ja se heikentää noudattamista. Rakenne on hakemisto, ja yksityiskohdat ladataan vain silloin, kun niitä tarvitaan.
 
 **Eikö tämä ole liikaa dokumentointia?**
-Pienessä projektissa on. Siksi ydindokumentteja on viisi ja muut lisätään tarpeen mukaan. Jokaisella artefaktilla on nimetty lukija ja käyttö ([artefact-guide.md](artefact-guide.md)), ja jos niitä ei voi nimetä, artefaktia ei tehdä. Dokumenttien pääversio on työtilassa (yksityinen Git), ja julkaistut kopiot ovat lukukopioita, joten synkronointiongelmaa ei synny. Jira säilyy tikettityölle. Jos asiakas ei salli materiaalin säilytystä GitHubissa, materiaali pidetään heidän omissa järjestelmissään, ja projektin lopussa lopulliset versiot luovutetaan heille.
+Pienessä projektissa on. Siksi ydindokumentteja on viisi ja muut lisätään tarpeen mukaan. Jokaisella artefaktilla on nimetty lukija ja käyttö ([artefact-guide.md](artefact-guide.md)), ja jos niitä ei voi nimetä, artefaktia ei tehdä. Dokumenttien pääversio on työtilassa (yksityinen Git), ja julkaistut kopiot ovat numeroituja ja päivättyjä versioita, ja uusi versio viedään asiakkaalle aina, kun dokumentti muuttuu. Jos asiakas haluaa ylläpitää jotain dokumenttia itse, sovitaan alussa, että heidän versionsa on siitä lähtien alkuperäinen. Jira säilyy tikettityölle. Jos asiakas ei salli materiaalin säilytystä GitHubissa, materiaali pidetään heidän omissa järjestelmissään, ja projektin lopussa lopulliset versiot luovutetaan heille.
 
 **Miten tämä auttaa monen sidosryhmän projektissa?**
 Sidosryhmäkartta, päätösloki ja palautteen kirjaus tekevät näkyväksi, kuka päättää, mistä oltiin eri mieltä ja miksi jokin ratkaisu tehtiin.
