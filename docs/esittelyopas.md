@@ -37,6 +37,30 @@ Ydindokumentit (viisi): 00 tuotekonteksti, 01 ongelman muotoilu, 02 sidosryhmäk
 
 ## 3. Miten repoa käytetään
 
+Kokonaiskuva prosessista. Kaksi muuta kaaviota (yhden tehtävän kulku ja repon itsetarkistus) ovat englanniksi tiedostossa `docs/workflow-map.md`. Jos muutat työnkulkua, päivitä tämä kaavio käsin.
+
+```mermaid
+flowchart TD
+    T["Julkinen mallipohja<br/>(tämä repo)"] -->|"Use this template"| W["Yksityinen projektityötila<br/>yksi per asiakasprojekti"]
+    W --> C["Täytä project.config.md<br/>saavutettavuustaso, tietoluokat,<br/>sidosryhmät, asiakkaan säännöt tekoälylle"]
+    C --> STAGES
+
+    subgraph STAGES["Kuusi vaihetta. Skilli luonnostelee, minä päätän."]
+        direction TB
+        S1["1. Ongelman muotoilu<br/>skilli: problem-framing<br/>artefaktit: 00, 01"]
+        S2["2. Ihmisten ymmärtäminen<br/>skilli: stakeholder-map<br/>artefaktit: 02, 03"]
+        S3["3. Suunnittelu<br/>skilli: user-flow-and-states<br/>artefaktit: 04, 07"]
+        S4["4. Tarkistus<br/>skillit: a11y-gate, security-privacy-brief, sameness-check<br/>artefaktit: 05, 06"]
+        RP["Oikeat ihmiset<br/>käyttäjätestaus, testaus avustavilla teknologioilla ja vammaisten käyttäjien kanssa,<br/>tietoturvakatselmointi, juridinen neuvonta. Tekoäly ei korvaa näitä."]
+        S5["5. Luovutus<br/>skilli: procurement-ready-handoff<br/>artefaktit: 08, 09"]
+        S6["6. Kirjaaminen ja pohdinta<br/>skilli: nda-safe-case-study<br/>artefakti: 11"]
+        S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6
+    end
+
+    STAGES -.- D["Koko ajan: päätösloki<br/>skilli: decision-log, artefakti 10<br/>jokaisen palaverin tai katselmoinnin jälkeen"]
+    STAGES -.- G["Koko ajan: suojakaiteet<br/>ei väitteitä ilman todisteita, ei asiakasdataa,<br/>ei salaisuuksia, roolit eikä nimet"]
+```
+
 Tärkein asia, jonka kannattaa sanoa ääneen: **tätä repoa ei kopioida asiakkaan reposeen.**
 
 1. Jokaiselle asiakasprojektille luodaan oma **yksityinen työtila** GitHubin "Use this template" -toiminnolla. Se on minun työtilani, ei asiakkaan koodikanta.

@@ -22,7 +22,29 @@ It is less suited to quick throwaway prototypes, solo experiments or visual-only
 
 ## How the workflow fits together
 
-Six stages. Each has a question it answers, skills that help, and artefacts that hold the result. Claude reads the earlier artefacts before it helps with the next one.
+Six stages. Each has a question it answers, skills that help, and artefacts that hold the result. Claude reads the earlier artefacts before it helps with the next one. Two more diagrams (what happens in one task, and how the repo checks itself) are in **[docs/workflow-map.md](docs/workflow-map.md)**.
+
+```mermaid
+flowchart TD
+    T["Public template repo<br/>(this repo)"] -->|"Use this template"| W["Private project workspace<br/>one per client project"]
+    W --> C["Fill in project.config.md<br/>accessibility level, data classes,<br/>stakeholders, client rules on AI tools"]
+    C --> STAGES
+
+    subgraph STAGES["Six stages. The skill drafts, I decide."]
+        direction TB
+        S1["1. Frame the problem<br/>skill: problem-framing<br/>artefacts: 00, 01"]
+        S2["2. Understand the people<br/>skill: stakeholder-map<br/>artefacts: 02, 03"]
+        S3["3. Design<br/>skill: user-flow-and-states<br/>artefacts: 04, 07"]
+        S4["4. Check<br/>skills: a11y-gate, security-privacy-brief, sameness-check<br/>artefacts: 05, 06"]
+        RP["Real people<br/>user testing, testing with assistive technology and disabled users,<br/>security review, legal advice. AI never stands in for these."]
+        S5["5. Hand off<br/>skill: procurement-ready-handoff<br/>artefacts: 08, 09"]
+        S6["6. Record and reflect<br/>skill: nda-safe-case-study<br/>artefact: 11"]
+        S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6
+    end
+
+    STAGES -.- D["Always: decision log<br/>skill: decision-log, artefact 10<br/>after every meeting or review"]
+    STAGES -.- G["Always: guardrails<br/>no claims without evidence, no client data,<br/>no secrets, roles not names"]
+```
 
 | Stage | The question | Skills | Artefacts |
 |---|---|---|---|
