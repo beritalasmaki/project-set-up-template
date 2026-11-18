@@ -66,7 +66,7 @@ flowchart TD
 7. Tarkista saavutettavuus, oletusvalinnat ja luottamuksellisuus ennen jakamista.
 8. Pidä istunnot lyhyinä ja tallenna työ commiteilla.
 
-Asiakkaalle toimitetaan tiedosto vain pyynnöstä tai projektin lopussa, esimerkiksi päätösloki tai suunnittelujärjestelmän säännöt.
+Asiakkaalle toimitetaan tiedosto vain pyynnöstä tai projektin lopussa, esimerkiksi päätösloki tai Design Systemin säännöt.
 
 ## Tekoälyn rooli ja rajat
 
@@ -101,10 +101,10 @@ Näin tekoälyn tekemän työn voi perustella myös ympäristössä, jossa jälj
 
 ## Tila ja rajaukset
 
-- **Rakennettu:** perusta, 12 mallipohjaa, suunnittelujärjestelmän kerros, yhdeksän skilliä ja tarkistusskriptit. Tarkistus on testattu myös tahallaan rikotuilla kopioilla, ja kontrastilaskuri antaa samat tulokset kuin tunnetut vertailuarvot (esimerkiksi musta valkoisella 21:1).
+- **Rakennettu:** perusta, 12 mallipohjaa, Design Systemin kerros, yhdeksän skilliä ja tarkistusskriptit. Tarkistus on testattu myös tahallaan rikotuilla kopioilla, ja kontrastilaskuri antaa samat tulokset kuin tunnetut vertailuarvot (esimerkiksi musta valkoisella 21:1).
 - **Ei vielä kokeiltu oikeassa projektissa.** Skillien laukeamista varten on testikehotteet (`evals/trigger-tests.md`), mutta niitä ei ole vielä ajettu.
 - **Esimerkit ovat fiktiivisiä** ja merkitty sellaisiksi. Esimerkit puuttuvat vielä pohjille 04–09 ja 11.
-- **Suunnittelujärjestelmän esimerkkien annotaatiot ovat luonnoksia.** Ne perustuvat tekijän omiin projekteihin, ja tekijän pitää vahvistaa ne.
+- **Design Systemin esimerkkien annotaatiot ovat luonnoksia.** Ne perustuvat tekijän omiin projekteihin, ja tekijän pitää vahvistaa ne.
 - **Saavutettavuuslista on suunnitteluvaiheen tarkistus, ei auditointi.** Se ei korvaa testausta apuvälineillä eikä käyttäjätestejä käyttäjillä, joilla on saavutettavuustarpeita.
 - **Lisenssiä ei ole vielä määritelty.** Ilman lisenssiä muilla ei ole oikeutta käyttää sisältöä, vaikka repo on julkinen.
 - **Estosäännöt ja skillien rakenne on tarkistettu Clauden dokumentaatiosta.** Auki on vielä muun muassa se, ladataanko skill-kansion README tekoälyn kontekstiin (siksi sitä ei sallita). Katso [important-notes.md](important-notes.md).
