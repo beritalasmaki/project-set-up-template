@@ -50,7 +50,7 @@ Each stage has skills that draft and artefacts that hold the result. More diagra
 4. Add other artefacts and skills when the project needs them.
 5. Log decisions as they are made, and check before you share.
 
-Full guide with example prompts: **[docs/using-this-template.md](docs/using-this-template.md)**. Which artefact is for what, and where each one goes (Jira, Confluence, Figma): **[docs/artefact-guide.md](docs/artefact-guide.md)**.
+Full guide with example prompts: **[docs/using-this-template.md](docs/using-this-template.md)**. Which artefact is for what, and where each one goes (Jira, Confluence, Figma): **[docs/artefact-guide.md](docs/artefact-guide.md)**. In Finnish: **[docs/ohjeet-suomeksi.md](docs/ohjeet-suomeksi.md)**.
 
 ## What is inside
 
