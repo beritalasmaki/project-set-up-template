@@ -1,6 +1,6 @@
 # 07 Design system rules
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 The design system written as rules an agent can follow. Claude reads this before it produces any UI, so it does not invent values or components.
 

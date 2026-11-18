@@ -1,6 +1,6 @@
 # 03 Requirements spec
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Core artefact**
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`] · **Core artefact**
 
 What the product must do and be. Accessibility, security and privacy are required sections, not extras.
 

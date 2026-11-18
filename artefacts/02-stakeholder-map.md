@@ -1,6 +1,6 @@
 # 02 Stakeholder map
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Core artefact**
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`] · **Core artefact**
 
 Who has a stake, who decides, and where interests collide. Roles only, no personal names.
 

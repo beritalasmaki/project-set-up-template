@@ -1,6 +1,6 @@
 # 00 Product context
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Core artefact**
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`] · **Core artefact**
 
 The one file read before any design task. It says who the product is for and what it must never do, so first drafts are not generic.
 

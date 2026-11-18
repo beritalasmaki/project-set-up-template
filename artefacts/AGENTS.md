@@ -12,6 +12,10 @@ These apply when filling in or editing the numbered artefacts. Templates are fil
 - Finish with the "Done when" checklist. Tick only what is true, and list what is not.
 - Set `Status` to `draft` until the owner has reviewed it, then `reviewed`.
 
+## Published copies
+
+If `Published at` holds a link, the published copy in the team's tool is the source of truth. The team may have edited it. Do not overwrite their changes from the workspace file. Ask the designer which version is current. If asked to create an artefact, ask who will read it and what they will do with it. See `docs/artefact-guide.md`.
+
 ## Core and optional
 
 Core five: `00`, `01`, `02`, `03`, `10`. The rest are added when the project needs them (see the README, step 5).

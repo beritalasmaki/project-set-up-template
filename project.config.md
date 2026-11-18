@@ -53,6 +53,7 @@ Full detail goes in `artefacts/02-stakeholder-map.md`.
 - **Tickets and planning:** [for example Jira]
 - **Documentation:** [for example Confluence]
 - **Code and design system:** [stack and design system name, or `none yet`]
+- **Where requirements and decisions are shared:** [for example Jira stories, Confluence pages, or `not decided`]
 
 ## Constraints
 

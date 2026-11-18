@@ -1,6 +1,6 @@
 # 05 Accessibility checklist
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 A design-stage check, not an audit. It shows what can be judged from a design file. Level and legal basis: see `project.config.md`.
 

@@ -1,6 +1,6 @@
 # 08 Handoff spec
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 What is final, and what behaviour sits beside each screen, so engineering and other vendors have nothing to guess.
 

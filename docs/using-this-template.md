@@ -45,6 +45,8 @@ Example prompts in this README show the shape, not fixed wording. Phrase yours t
 
 ### Step 5: Add other artefacts when the project needs them
 
+Create an artefact only if someone will read it and use it. Who reads each one, and where it goes (Jira, Confluence, Figma), is in [artefact-guide.md](artefact-guide.md).
+
 | When this happens | Add | Skill |
 |---|---|---|
 | You start designing screens and flows | `04 User flows and states` | `user-flow-and-states` |

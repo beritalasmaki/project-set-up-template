@@ -1,6 +1,6 @@
 # 01 Problem framing
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Core artefact**
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`] · **Core artefact**
 
 Separates the request from the problem, so design starts from a user situation and not from a solution someone has already chosen.
 

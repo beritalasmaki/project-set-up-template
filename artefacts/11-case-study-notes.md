@@ -1,6 +1,6 @@
 # 11 Case study notes
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 Notes toward a portfolio case study, kept safe to publish. Confidential details never go in this file. If in doubt, leave them out and ask the client.
 

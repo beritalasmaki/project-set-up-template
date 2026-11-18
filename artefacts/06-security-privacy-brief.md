@@ -1,6 +1,6 @@
 # 06 Security and privacy brief
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 What data the design shows, to whom, and what questions the security and data protection owners must answer. A design-stage brief, not a security review or legal advice.
 

@@ -1,6 +1,6 @@
 # 09 Stakeholder feedback log
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 Every comment in one place, so nothing is lost, duplicates are merged and conflicts are visible to the person who decides.
 

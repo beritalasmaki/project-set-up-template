@@ -1,6 +1,6 @@
 # 04 User flows and states
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role]
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`]
 
 One task as a flow, then every screen against its states. Use one copy of this file per task, or one section per task.
 

@@ -21,6 +21,7 @@ Ydinajatus yhdessä lauseessa: **tekoäly luonnostelee, minä päätän, oikeat 
 | `README.md` | Lyhyt esittely englanniksi: idea, prosessikaavio, pikaohje ja kansiot | valmis |
 | `docs/using-this-template.md` | Täysi käyttöohje englanniksi: vaiheet, esimerkkikehotteet ja miksi artefaktit on olemassa | valmis |
 | `docs/workflow-map.md` | Kolme prosessikaaviota | valmis |
+| `docs/artefact-guide.md` | Jokaiselle artefaktille lukija, käyttötilanne ja kohde (Jira, Confluence, Figma tai pysyy työtilassa), sekä sääntö: tee artefakti vain, jos joku lukee sen ja käyttää sitä | valmis |
 | `AGENTS.md` ja `CLAUDE.md` | Tekoälyn perussäännöt. Lyhyt hakemisto (alle 100 riviä), ei pitkä sääntökirja | valmis |
 | `project.config.md` | Projektin perustiedot: saavutettavuustaso, tietoluokat, kielet, sidosryhmien roolit, asiakkaan säännöt tekoälylle | valmis |
 | `artefacts/` | 12 mallipohjaa (00–11) ja fiktiiviset esimerkit viidelle ydindokumentille | valmis |
@@ -166,7 +167,7 @@ Ei viedä tekoälylle ilman asiakkaan lupaa. `project.config.md` kysyy asiakkaan
 Koska pitkä sääntökirja ladataan joka kerta ja se heikentää noudattamista. Rakenne on hakemisto, ja yksityiskohdat ovat vain silloin ladattuina kun niitä tarvitaan.
 
 **Eikö tämä ole liikaa dokumentointia?**
-Pienessä projektissa on. Siksi ydindokumentteja on viisi ja muut lisätään tarpeen mukaan.
+Pienessä projektissa on. Siksi ydindokumentteja on viisi ja muut lisätään tarpeen mukaan. Jokaisella artefaktilla on nimetty lukija ja käyttö (`docs/artefact-guide.md`), ja jos niitä ei voi nimetä, artefaktia ei tehdä. Osa artefakteista julkaistaan asiakkaan työkaluihin (esim. vaatimukset Jira-tiketteinä), jolloin julkaistu kopio on totuuden lähde. Työtila ei korvaa asiakkaan työkaluja.
 
 **Miten tämä auttaa monen sidosryhmän projektissa?**
 Sidosryhmäkartta, päätöslokki ja palautteen lokiin kirjaus tekevät näkyväksi kuka päättää, mikä on ristiriidassa ja miksi jokin ratkaisu tehtiin.

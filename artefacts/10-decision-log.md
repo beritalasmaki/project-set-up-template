@@ -1,6 +1,6 @@
 # 10 Decision log
 
-**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Core artefact**
+**Status:** draft · **Last updated:** [date] · **Owner (role):** [role] · **Published at:** [link, or `not shared`] · **Core artefact**
 
 One short entry per significant decision, so "why is it like this?" always has an answer. Significant means hard to reverse, affects other people, or likely to be questioned later. Decider is a role, not a personal name.
 
