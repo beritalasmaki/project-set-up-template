@@ -24,7 +24,7 @@ One task as a flow, then every screen against its states. It shows what has not 
 4. **Steps:** a table of numbered steps. Each pairs what the user does with how the system responds, and names the screen. Do not write steps with no system response.
 5. **Decision points:** each with an ID, the condition, where it leads, and the **assumption** behind it. Cite a source or mark `gap`.
 6. **Errors and recovery:** for each step that can fail, what goes wrong, what the user sees, how they recover and where they land. Include no permission, timeout and lost connection.
-   Then ask, for each step, **who might find it hard and why** (for example little digital experience, assistive technology, a phone in a hurry, an interruption) and what the design does about it. The same path can be smooth for one user and unbearable for another. Record it under *Hard paths for some users*. Ask the designer. If there is no evidence, write `gap`. Never claim how a group experiences a step.
+   Then ask, for each step, **who might find it challenging and why** (for example little digital experience, assistive technology, a phone in a hurry, an interruption) and what the design does about it. The same path can be smooth for one user and unbearable for another. Record it under *Challenging paths for some users*. Ask the designer. If there is no evidence, write `gap`. Never claim how a group experiences a step.
 7. **Exits:** success, abandon and hand-off to another channel.
 8. **Screens against states:** list each screen. Mark each cell `designed`, `missing` or `not needed` (with the reason). **Default every cell to `missing`.** Mark `designed` only when the designer says a design exists.
 9. **Edge cases:** sweep each screen using the prompts. List those that matter.
@@ -46,7 +46,7 @@ Update `artefacts/04-user-flows-and-states.md`. Set `Status: draft` until the de
 
 - [ ] The flow covers errors and recovery, not only the happy path
 - [ ] Every step has a system response
-- [ ] For each step, who might find it hard is asked, and the answer or a `gap` is written
+- [ ] For each step, who might find it challenging is asked, and the answer or a `gap` is written
 - [ ] Every decision point has an assumption and a source or `gap`
 - [ ] Every screen has every state marked, and `designed` was set only by the designer
 - [ ] Gaps are ordered by what blocks the build first

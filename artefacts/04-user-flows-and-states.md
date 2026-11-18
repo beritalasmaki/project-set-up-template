@@ -28,11 +28,11 @@ One task as a flow, then every screen against its states. Use one copy of this f
 |---|---|---|---|
 | | | | |
 
-## Hard paths for some users
+## Challenging paths for some users
 
-The same path can be smooth for one user and unbearable for another. For each step, ask who might find it hard. Ask, do not assume: without evidence, write `gap`.
+The same path can be smooth for one user and unbearable for another. For each step, ask who might find it challenging. Ask, do not assume: without evidence, write `gap`.
 
-| Step | Who might find it hard | Why | What the design does about it |
+| Step | Who might find it challenging | Why | What the design does about it |
 |---|---|---|---|
 | | [for example little digital experience, assistive technology, a phone in a hurry, an interruption] | | |
 
@@ -61,7 +61,7 @@ Mark each cell `designed`, `missing` or `not needed` (with the reason).
 ## Done when
 
 - [ ] The flow covers errors and recovery, not only the happy path
-- [ ] Each step has been checked for who might find it hard, with an answer or a `gap`
+- [ ] Each step has been checked for who might find it challenging, with an answer or a `gap`
 - [ ] Every decision point has an assumption and a source or `gap`
 - [ ] Every screen has every state marked
 - [ ] Gaps are ordered by what blocks the build
