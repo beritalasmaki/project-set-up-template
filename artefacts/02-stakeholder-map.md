@@ -22,13 +22,17 @@ Who has the final say on what.
 | Security and data handling | | | |
 | Release | | | |
 
-## Known conflicts
+## Tensions and conflicts
+
+Most conflicts do not show at kick-off. They come up as the project goes on, often in reviews. Add a row when someone states one or when one shows up, and leave the table empty until then. Do not predict or invent them.
+
+Technical or legal limits belong in `project.config.md` and `03-requirements-spec.md`. They become a row here only when a wish runs into one.
 
 Set side by side. Do not resolve them here. The decider does.
 
-| Topic | [Role A] wants | [Role B] wants | Who decides |
-|---|---|---|---|
-| | | | |
+| Topic | Raised | [Role A] wants | [Role B] wants | Who decides | Source |
+|---|---|---|---|---|---|
+| | at kick-off / during the project | | | | evidence: [source] |
 
 ## Communication rhythm
 
@@ -44,5 +48,5 @@ Set side by side. Do not resolve them here. The decider does.
 
 - [ ] Every stakeholder has a role, an interest and a "decides?" value
 - [ ] Decision rights exist for scope, accessibility, security and release
-- [ ] Conflicts are written down, with a named decider for each
+- [ ] Conflicts raised so far are side by side, each with a named decider (none yet is normal at the start)
 - [ ] Gaps (stakeholders not yet met) are listed

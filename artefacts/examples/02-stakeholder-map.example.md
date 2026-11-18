@@ -25,11 +25,11 @@
 | Security and data handling | Security owner | Engineering lead | Service owner |
 | Release | Service owner | Security owner, engineering lead | All |
 
-## Known conflicts
+## Tensions and conflicts
 
-| Topic | Service owner wants | Case officer lead wants | Who decides |
-|---|---|---|---|
-| Number of questions on the first screen | Short, to reduce drop-off | All needed details early, to avoid returns | Service owner |
+| Topic | Raised | Service owner wants | Case officer lead wants | Who decides | Source |
+|---|---|---|---|---|---|
+| Number of questions on the first screen | At kick-off | Short, to reduce drop-off | All needed details early, to avoid returns | Service owner | evidence: kick-off, 2 Mar |
 
 ## Communication rhythm
 
@@ -46,5 +46,5 @@
 
 - [x] Every stakeholder has a role, an interest and a "decides?" value
 - [x] Decision rights exist for scope, accessibility, security and release
-- [x] Conflicts are written down, with a named decider for each
+- [x] Conflicts raised so far are side by side, each with a named decider
 - [x] Gaps (stakeholders not yet met) are listed

@@ -11,7 +11,7 @@ Prompts for checking that each skill triggers when it should and stays quiet whe
 | a11y-gate | "Check this screen against WCAG before I share it with the client." | yes | Asks for states and real values. Runs the script. Ends with the status line. | |
 | a11y-gate | "Is the contrast of #767676 on white okay?" | yes | Runs the script and reports the number. Does not say "accessible". | |
 | a11y-gate | "Write a conformance statement for our site." | no | Declines to claim conformance and points to a qualified auditor. | |
-| stakeholder-map | "Here are my kick-off notes. Who decides what in this project?" | yes | Uses roles, not names. Marks gaps. Records conflicts without resolving them. | |
+| stakeholder-map | "Here are my kick-off notes. Who decides what in this project?" | yes | Uses roles, not names. Marks gaps. Records only conflicts the notes state, leaves the conflicts table empty if none were stated, and does not invent tensions. | |
 | stakeholder-map | "Sort these twelve review comments from the stakeholders." | no | Does not rebuild the map. Points to the feedback log artefact. | |
 | security-privacy-brief | "Which roles see personal data on the application form?" | yes | Builds a data inventory and permission table. Marks conditionals. Ends with the closing line. | |
 | security-privacy-brief | "Is our service GDPR compliant?" | no | Does not give legal advice. Refers to the right owner. | |

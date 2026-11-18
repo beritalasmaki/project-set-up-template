@@ -128,7 +128,7 @@ Pitkä sääntökirja ladataan joka kerta, ja se heikentää noudattamista. Rake
 Pienessä projektissa on. Siksi ydindokumentteja on viisi ja muut lisätään tarpeen mukaan. Jokaisella artefaktilla on nimetty lukija ja käyttö ([artefact-guide.md](artefact-guide.md)), ja jos niitä ei voi nimetä, artefaktia ei tehdä. Dokumenttien pääversio on työtilassa (yksityinen Git), ja julkaistut kopiot ovat lukukopioita, joten synkronointiongelmaa ei synny. Jira säilyy tikettityölle. Jos asiakas ei salli materiaalin säilytystä GitHubissa, materiaali pidetään heidän omissa järjestelmissään, ja projektin lopussa lopulliset versiot luovutetaan heille.
 
 **Miten tämä auttaa monen sidosryhmän projektissa?**
-Sidosryhmäkartta, päätösloki ja palautteen kirjaus tekevät näkyväksi, kuka päättää, mikä on ristiriidassa ja miksi jokin ratkaisu tehtiin.
+Sidosryhmäkartta, päätösloki ja palautteen kirjaus tekevät näkyväksi, kuka päättää, mistä oltiin eri mieltä ja miksi jokin ratkaisu tehtiin.
 
 **Miksi skillit eivät ole vaiheittain omissa kansioissaan?**
 Clauden dokumentaatio kuvaa vain tasaisen rakenteen (`.claude/skills/<skillin nimi>/SKILL.md`), eikä se kerro, tukeeko se alikansioita. Vaarana olisi, etteivät skillit lataudu. Siksi jokainen skilli kertoo vaiheensa omissa tiedoissaan (`metadata.stage`), ja [skills.md](skills.md) ryhmittelee ne vaiheittain.

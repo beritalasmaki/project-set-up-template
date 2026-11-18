@@ -21,7 +21,7 @@ Makes visible who has a stake, who decides, and where interests collide. Claude 
 2. List each stakeholder as a **role**. Convert personal names to roles. If a role is unclear, mark it `gap` and ask.
 3. For each: interest, what they need to see to say yes, influence, and whether they decide, share a decision, or are informed. Cite the source (`evidence: kick-off notes, 2 Mar`) or mark `gap`.
 4. Build the decision-rights table for scope, design direction, accessibility trade-offs, security and data handling, and release. Use `references/decision-rights-questions.md` to find who decides when the material is silent. Ask the designer. Do not assume.
-5. Record conflicts **side by side**: who wants what, and who decides. Do not resolve them. Do not suggest who is right.
+5. Record a conflict **side by side** only when the material states it or the designer reports it: who wants what, and who decides. Do not resolve it and do not suggest who is right. Most conflicts only show up later in the project, so an empty table at kick-off is normal. Do not predict or invent one.
 6. List stakeholders mentioned but not yet met as gaps. Note the risk each gap creates.
 7. Ask at most three questions that would most improve the map, then update the file.
 
@@ -29,6 +29,7 @@ Makes visible who has a stake, who decides, and where interests collide. Claude 
 
 - Roles only. No personal names, no personal details, nothing about a person's character.
 - Never infer a position. If a stakeholder's view was not stated in the material, write `gap`.
+- Never predict a conflict. Technical or legal limits belong in the project config and the requirements, not here.
 - Never rank people. Influence is about the decision, not the person.
 
 ## Output

@@ -33,7 +33,7 @@ For each one, you paste in your raw material, Claude drafts, and you correct. An
 |---|---|---|---|---|
 | `00 Product context` | none | The client brief, kick-off notes, existing docs | Answer the gaps, delete anything wrong | Users, constraints and "never does" are written, each with a source |
 | `01 Problem framing` | `problem-framing` | The request as it was handed to you, any user data | Check the problem has no solution hidden in it | Evidence and gaps are listed, and the requester has seen "not solving" |
-| `02 Stakeholder map` | `stakeholder-map` | Names and roles from kick-off, org chart | Mark who decides and where interests conflict | Every stakeholder has a role, a need and a "decides / informed" label |
+| `02 Stakeholder map` | `stakeholder-map` | Names and roles from kick-off, org chart | Mark who decides, and who has the final say if they disagree | Every stakeholder has a role, a need and a "decides / informed" label |
 | `03 Requirements spec` | none | The brief, workshop notes, legal or policy documents | Confirm each requirement's owner and source | Accessibility, security and privacy sections are filled in, not skipped |
 | `10 Decision log` | `decision-log` | Nothing yet | Add an entry every time something significant is decided | At least the decisions already made at kick-off are recorded |
 
