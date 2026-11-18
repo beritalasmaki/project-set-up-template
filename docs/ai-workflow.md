@@ -16,7 +16,7 @@ AI speeds up the parts of design work that are about structure and writing thing
 |---|---|---|---|
 | Problem and scope | What problem we solve, what is out of scope | A first problem statement from my notes, gaps listed | Talking to users and stakeholders |
 | Design direction | Which option, which trade-offs to accept | Options laid out side by side, consequences in words | Final design judgement |
-| Accessibility | Whether a fix is made, what level we commit to | Design-stage checks, marked pass, fail or cannot tell | Testing with assistive technology and disabled users; formal audits |
+| Accessibility | Whether a fix is made, what level we commit to | Design-stage checks, marked pass, fail or cannot tell | Testing with assistive technology and users with access needs; formal audits |
 | Security and privacy | What data is shown to whom | A first data and roles overview, open questions | Security review, legal and data protection advice |
 | Stakeholders | Who decides, how to respond to conflicts | Merging and sorting feedback, drafting replies | Negotiation and sign-off |
 | Decisions | What was decided and why | Drafting log entries from my notes | Approval by the named decider |
@@ -38,7 +38,7 @@ Not every project needs every artefact. Small projects use the core five (produc
 
 - **No client data in prompts** unless the client's rules allow it. Until I know, I use placeholders.
 - **No invented research.** Claude does not write user quotes, interview findings, metrics or testimonials.
-- **No stand-ins for users.** I do not ask AI how a disabled person or a particular user group "would" experience something.
+- **No stand-ins for users.** I do not ask AI how a user with access needs or a particular user group "would" experience something.
 - **No final calls.** Accessibility conformance, legal compliance and security sign-off belong to qualified people.
 - **No unreviewed output leaves my hands.** Everything Claude drafts is read and corrected by me first.
 

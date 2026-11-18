@@ -1,6 +1,6 @@
 ---
 name: a11y-gate
-description: Runs a design-stage accessibility check of one screen or flow against WCAG 2.2 at the level set in project.config.md, answering each check pass, fail or cannot tell from a design, writing each fix as a design change, and listing what only code, assistive technology and disabled users can show. Uses a script for contrast and target-size maths. Use when asked to check accessibility of a design, review contrast, focus order or target size, fill in artefacts/05-accessibility-checklist.md, or before sharing or handing off a design. Do not use to claim conformance, to audit built code, or to replace testing with disabled users.
+description: Runs a design-stage accessibility check of one screen or flow against WCAG 2.2 at the level set in project.config.md, answering each check pass, fail or cannot tell from a design, writing each fix as a design change, and listing what only code, assistive technology and users with access needs can show. Uses a script for contrast and target-size maths. Use when asked to check accessibility of a design, review contrast, focus order or target size, fill in artefacts/05-accessibility-checklist.md, or before sharing or handing off a design. Do not use to claim conformance, to audit built code, or to replace testing with users who have access needs.
 metadata:
   stage: check
 ---
@@ -12,7 +12,7 @@ A design-stage check. It finds what a design file can show, and says plainly wha
 ## When not to use
 
 - Someone wants a conformance statement or audit: that needs a qualified auditor and the built product.
-- The design is ready for disabled users to try: plan sessions with them. A file review never stands in.
+- The design is ready for users with access needs to try: plan sessions with them. A file review never stands in.
 - A quick contrast number is all that is needed: run the script directly.
 
 ## Inputs
@@ -33,7 +33,7 @@ A design-stage check. It finds what a design file can show, and says plainly wha
    - `python3 .claude/skills/a11y-gate/scripts/contrast.py --tokens design-system/tokens.json`
 5. Go through the criteria in `references/design-stage-checks.md`, group by group. Answer each: `pass`, `fail` or `cannot tell from a design`.
 6. For every `fail`, write the fix as a design change: which token, label, size or spacing. The designer decides whether to make it.
-7. Close with what a design file cannot show (screen reader output, real focus behaviour, zoom in a browser, timing, how disabled people complete the task) and with the status line.
+7. Close with what a design file cannot show (screen reader output, real focus behaviour, zoom in a browser, timing, how users with access needs complete the task) and with the status line.
 
 ## Output
 
@@ -45,7 +45,7 @@ Fill in `artefacts/05-accessibility-checklist.md`. End with the status line exac
 
 - Never write "accessible", "compliant" or "passes WCAG". A clean table is "no fails found in what was shown".
 - Quote no threshold from memory. Use the script output and link the W3C criterion.
-- Never describe how a disabled person "would" experience the design.
+- Never describe how a user with access needs "would" experience the design.
 - Legal duties vary: check with a qualified adviser.
 
 ## Verify before finishing

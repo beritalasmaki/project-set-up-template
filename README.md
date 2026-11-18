@@ -30,7 +30,7 @@ flowchart TD
         S2["2. Understand the people<br/>skill: stakeholder-map<br/>artefacts: 02, 03"]
         S3["3. Design<br/>skill: user-flow-and-states<br/>artefacts: 04, 07"]
         S4["4. Check<br/>skills: a11y-gate, security-privacy-brief, sameness-check<br/>artefacts: 05, 06"]
-        RP["Real people<br/>user testing, testing with assistive technology and disabled users,<br/>security review, legal advice. AI never stands in for these."]
+        RP["Real people<br/>user testing, testing with assistive technology and users with access needs,<br/>security review, legal advice. AI never stands in for these."]
         S5["5. Hand off<br/>skill: procurement-ready-handoff<br/>artefacts: 08, 09"]
         S6["6. Record and reflect<br/>skill: nda-safe-case-study<br/>artefact: 11"]
         S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6
@@ -69,6 +69,6 @@ Full guide with example prompts: **[docs/using-this-template.md](docs/using-this
 - Never calls a design "accessible", "compliant" or "tested". Checks end as pass, fail or cannot tell.
 - Every claim is evidence with a source, or a marked gap.
 - No client data and no secrets in the repo.
-- Does not replace real people: user testing, testing with disabled users, security review, legal advice.
+- Does not replace real people: user testing, testing with users who have access needs, security review, legal advice.
 
 Full rules: [AGENTS.md](AGENTS.md). The repo checks its own rules automatically.

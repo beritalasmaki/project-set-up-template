@@ -28,7 +28,7 @@ The owner is a senior UX/product designer working on public sector and B2B proje
 - **Label every claim** as `evidence` (with its source) or `gap`. Do not invent user quotes, research findings, metrics or stakeholder positions.
 - **No client data.** No real names, personal data, confidential figures or screenshots in prompts, files or commits. Use placeholders such as `[Client]`, `[Stakeholder A]`.
 - **No secrets.** Never write keys, tokens or passwords to the repo. Use `.env.example` with empty values.
-- **Do not replace real people.** User testing, testing with disabled people, security review and legal advice need humans. Say so when relevant.
+- **Do not replace real people.** User testing, testing with users who have access needs, security review and legal advice need humans. Say so when relevant.
 - **Legal-adjacent output** ends with: "Design-stage review, not an audit or conformance statement. Check legal duties with a qualified adviser."
 - **Decisions are recorded by role**, not by personal name, in `artefacts/10-decision-log.md`.
 

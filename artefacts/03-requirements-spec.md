@@ -18,7 +18,7 @@ Level and legal basis: see `project.config.md`.
 |---|---|---|
 | AR-01 | [for example every flow is operable by keyboard alone] | |
 
-Reminder: design-stage checks are listed in `05-accessibility-checklist.md`. Conformance needs testing with code, assistive technology and disabled users.
+Reminder: design-stage checks are listed in `05-accessibility-checklist.md`. Conformance needs testing with code, assistive technology and users with access needs.
 
 ## Security and privacy requirements
 
