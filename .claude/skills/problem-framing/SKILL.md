@@ -19,7 +19,7 @@ Separates the request from the problem, so design starts from a user situation a
 ## Workflow
 
 1. Read the inputs. Do not load other artefacts.
-2. **Quote the request exactly**, with who asked and when. Never paraphrase it. It stays in the file even when it is reframed.
+2. **Quote the request as it was handed over**, with who asked (by role) and when, but replace the client's name and any person's name with a placeholder. Never paraphrase it. It stays in the file even when it is reframed.
 3. **Write the problem** as a situation a user is in: who is trying to do what, what gets in the way, and what follows from that. Then run the solution check in `references/problem-statement-checks.md`. If a fix is hiding in the statement, rewrite it.
 4. **Evidence on hand:** one row per finding, with its source, date and type (`observation`, `data` or `opinion`). An opinion stays an opinion, however senior the person.
 5. **Evidence missing:** what is not known, and who could tell. This list should not be empty. If it is, say why.
@@ -41,7 +41,7 @@ Update `artefacts/01-problem-framing.md`. Set `Status: draft` until the designer
 
 ## Verify before finishing
 
-- [ ] The request is quoted exactly, with who and when
+- [ ] The request is quoted as handed over, with names replaced by placeholders, and says who (by role) and when
 - [ ] The problem statement passes the solution check
 - [ ] Every finding has a source and a type, and gaps are listed
 - [ ] "Not solving" is filled in

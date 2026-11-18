@@ -6,7 +6,7 @@ Separates the request from the problem, so design starts from a user situation a
 
 ## The request as handed over
 
-> [Quote it exactly.] Requested by [role] on [date].
+> [Quote it as handed over. Replace the client's name and any person's name with a placeholder.] Requested by [role] on [date].
 
 ## The problem
 
