@@ -14,7 +14,7 @@ These apply when filling in or editing the numbered artefacts. Templates are fil
 
 ## Published copies
 
-If `Published at` holds a link, the published copy in the team's tool is the source of truth. The team may have edited it. Do not overwrite their changes from the workspace file. Ask the designer which version is current. If asked to create an artefact, ask who will read it and what they will do with it. See `docs/artefact-guide.md`.
+By default the workspace file is the source of truth, and a copy linked in `Published at` is a read-only export. Never put content in a published copy that is not in the workspace file. `project.config.md` lists exceptions (*Source of truth exceptions*) where the team edits a document in its own tool. For those, the published copy may hold team edits: do not overwrite them from the workspace file, and ask the designer which version is current. Check *Where client material may be stored* in the config before saving client material here. If asked to create an artefact, ask who will read it and what they will do with it. See `docs/artefact-guide.md`.
 
 ## Core and optional
 

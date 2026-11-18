@@ -27,6 +27,7 @@ Use roles, not personal names, and placeholders such as `[Client]`. This file mu
 - **Data classes the product handles:** [public / internal / personal / sensitive personal / confidential]
 - **User roles and permissions:** [list roles, one line each]
 - **Where data is shown or exported:** [screens, reports, downloads]
+- **Where client material may be stored:** [for example private GitHub allowed, only the client's own systems, or `unknown`. Fill in before saving client material here]
 - **Client rules on AI tools:** [allowed / allowed with limits / not allowed / `unknown`]
 - **Approved AI tools and what may be pasted into them:** [details or `unknown`]
 - **Security contact (role):** [who reviews security questions]
@@ -54,6 +55,7 @@ Full detail goes in `artefacts/02-stakeholder-map.md`.
 - **Documentation:** [for example Confluence]
 - **Code and design system:** [stack and design system name, or `none yet`]
 - **Where requirements and decisions are shared:** [for example Jira stories, Confluence pages, or `not decided`]
+- **Source of truth exceptions:** [artefacts the team edits in its own tool instead of this workspace, for example `03 in Jira`, or `none`]
 
 ## Constraints
 
