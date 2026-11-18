@@ -26,17 +26,17 @@ flowchart TD
 
     subgraph STAGES["Six stages. The skill drafts, I decide."]
         direction TB
-        S1["1. Frame the problem<br/>skill: problem-framing<br/>artefacts: 00, 01"]
-        S2["2. Understand the people<br/>skill: stakeholder-map<br/>artefacts: 02, 03"]
-        S3["3. Design<br/>skill: user-flow-and-states<br/>artefacts: 04, 07"]
-        S4["4. Check<br/>skills: a11y-gate, security-privacy-brief, sameness-check<br/>artefacts: 05, 06"]
+        S1["<b>1. Frame the problem</b><br/>Skill: problem-framing<br/>Artefacts: 00 product context · 01 problem framing"]
+        S2["<b>2. Understand the people</b><br/>Skill: stakeholder-map<br/>Artefacts: 02 stakeholder map · 03 requirements spec"]
+        S3["<b>3. Design</b><br/>Skill: user-flow-and-states<br/>Artefacts: 04 user flows and states · 07 design system rules"]
+        S4["<b>4. Check</b><br/>Skills: a11y-gate · security-privacy-brief · sameness-check<br/>Artefacts: 05 accessibility checklist · 06 security and privacy brief"]
         RP["Real people<br/>user testing, testing with assistive technology and disabled users,<br/>security review, legal advice. AI never stands in for these."]
-        S5["5. Hand off<br/>skill: procurement-ready-handoff<br/>artefacts: 08, 09"]
-        S6["6. Record and reflect<br/>skill: nda-safe-case-study<br/>artefact: 11"]
+        S5["<b>5. Hand off</b><br/>Skill: procurement-ready-handoff<br/>Artefacts: 08 handoff spec · 09 stakeholder feedback log"]
+        S6["<b>6. Record and reflect</b><br/>Skill: nda-safe-case-study<br/>Artefacts: 11 case study notes"]
         S1 --> S2 --> S3 --> S4 --> RP --> S5 --> S6
     end
 
-    STAGES -.- D["Always: decision log<br/>skill: decision-log, artefact 10<br/>after every meeting or review"]
+    STAGES -.- D["<b>Always: decision log</b><br/>Skill: decision-log<br/>Artefact: 10 decision log<br/>after every meeting or review"]
     STAGES -.- G["Always: guardrails<br/>no claims without evidence, no client data,<br/>no secrets, roles not names"]
 ```
 
